@@ -1,0 +1,41 @@
+<template name="header">
+	<div class="site-header">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-sm-3 text-center">
+					<img class="logo" src="{{ dict 'siteLogo.link' }}">
+				</div>
+				<div class="col-sm-4 col-sm-offset-5">
+					<div class="social clearfix">
+						<div><a href="mailto:{{ dict 'email' }}"><i class="fa fa-envelope"></i></a></div>
+						<div><a href="{{ dict 'facebook' }}" target="_BLANK"><i class="fa fa-facebook"></i></a></div>
+						<div><a href="{{ dict 'instagram' }}" target="_BLANK"><i class="fa fa-instagram"></i></a></div>
+						<div><a href="{{ dict 'pinterest' }}" target="_BLANK"><i class="fa fa-pinterest"></i></a></div>
+						<div><a href="{{ dict 'twitter' }}" target="_BLANK"><i class="fa fa-twitter"></i></a></div>
+					</div>
+					<div class="help">
+						<p>{{ dict 'headerHelpText' }}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="navbar-list">
+			<ul class="nav nav-tabs" role="tablist">
+				<li class="active"><a href="#home">Home</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#about-us">About Us</a></li>
+				<li><a href="#gallery">Gallery</a></li>
+				<li><a href="#pricing">Pricing</a></li>
+				<li><a href="#contact">Contact</a></li>
+				{{# if currentUser }}
+				<li><a href="{{ pathFor 'admin' }}">Admin</a></li>
+				{{/ if }}
+			</ul>
+		</div>
+	</div>
+	<div class="hidden-xs">
+		<br><br><br><br><br>
+	</div>
+</template>

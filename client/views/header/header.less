@@ -1,0 +1,121 @@
+@import "/client/stylesheets/variables.import.less";
+
+body {
+	position: relative;
+}
+
+.symbol-target {
+    padding-top: 100px;
+    margin-top: -100px;
+    width: 1px; /* '0' will not work for Opera */
+    display: inline-block;
+}
+
+.site-header {
+	position: fixed;
+	background: #fff;
+	width: 100%;
+	z-index: 100;
+
+	padding-top: 10px;
+	color: @brand-primary;
+
+	-webkit-box-shadow: 0px -2px 10px 0px rgba(50, 50, 50, 0.58);
+	-moz-box-shadow:    0px -2px 10px 0px rgba(50, 50, 50, 0.58);
+	box-shadow:         0px -2px 10px 0px rgba(50, 50, 50, 0.58);
+
+	img.logo {
+		width: 100%;
+	}
+
+	.help {
+		text-align: right;
+	}
+
+	.social {
+		text-align: right;
+		margin-top: 8px;
+		div {
+			display: inline-block;
+			background-color: #555555;
+			width: 25px;
+			height: 25px;
+			margin-left: 5px;
+			text-align: center;
+			border-radius: 4px;
+			font-size: 16px;
+			line-height: 24px;
+
+			a {
+				color: white;
+			}
+		}
+	} 
+
+	.nav-tabs {
+		margin-top: -5px;
+		border-bottom: 0;
+		text-align:center;
+
+		> li {
+			float:none;
+			display:inline-block;
+			*display:inline; /* ie7 fix */
+			zoom:1; /* hasLayout ie7 trigger */
+			text-transform: uppercase;
+			margin-bottom: 0px;
+
+			// Actual tabs (as links)
+			> a {
+				color: @gray;
+				font-weight: bold;
+				margin-right: 2px;
+				line-height: 1.0;
+				border: 0;
+				&:hover {
+					background-color: transparent;
+					border-color: 0;
+				}
+			}
+
+			// Active state, and its :hover to override normal :hover
+			&.active > a {
+				&,
+				&:hover,
+				&:focus {
+					border: 0;
+					border-bottom: 4px solid @brand-primary;
+					cursor: default;
+				}
+			}
+		}
+	}
+
+	@media (max-width: @screen-xs-max) {
+		position: inherit;
+
+		img.logo {
+			width: 60%;
+			margin-bottom: 20px;
+		}
+
+		.social,
+		.help {
+			margin-top: 5px;
+			text-align: center !important;
+		}
+
+		.nav-tabs {
+			margin-top: 10px;
+
+			>li.active > a {
+				&,
+				&:hover,
+				&:focus {
+					border-bottom: 0;
+				}
+			}
+		}
+	}
+
+}

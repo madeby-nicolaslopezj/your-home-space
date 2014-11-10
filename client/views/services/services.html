@@ -1,0 +1,39 @@
+<template name="services">
+
+	<div class="services container">
+		<span id="services" class="symbol-target"></span>
+
+		<div class="header">
+			<h1 class="section-title">{{ getDict.servicesTitle }}</h1>
+			<p class="section-subtitle">{{ getDict.servicesSubtitle }}</p>
+		</div>
+
+		<br><br>
+
+		<div class="items">
+			{{#each services}}
+				{{> servicesRow }}
+			{{/each}}
+		</div>
+
+	</div>
+
+</template>
+
+<template name="servicesRow">
+	<div class="row">
+		{{#each row }}
+			{{> servicesItem}}
+		{{/each}}
+	</div>
+</template>
+
+<template name="servicesItem">
+	<div class="col-sm-4 item">
+		<div class="service-circle">
+			<img src="{{ image.link }}">
+		</div>
+		
+		<p> {{{ text }}} </p>
+	</div>
+</template>

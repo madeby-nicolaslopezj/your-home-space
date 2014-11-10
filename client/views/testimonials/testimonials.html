@@ -1,0 +1,35 @@
+<template name="testimonials">
+
+	<div class="testimonials container">
+		<span id="testimonials" class="symbol-target"></span>
+
+		<div class="header">
+			<h1 class="section-title">{{ getDict.testimonialsTitle }}</h1>
+			<p class="section-subtitle">{{ getDict.testimonialsSubtitle }}</p>
+		</div>
+
+		<br><br>
+
+		<div class="items">
+			<div id="carousel-testimonials" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					{{# each testimonials }}
+						<li data-target="#carousel-testimonials" data-slide-to="{{ index }}" class="{{# if isCero index }}active{{/ if }}"></li>
+					{{/ each }}
+				</ol>
+				<div class="carousel-inner" role="listbox">
+					{{# each testimonials }}
+						<div class="item {{# if isCero index }}active{{/ if }}">
+							<p>{{ index }}{{ text }}</p>
+							<p><i>{{ author }}</i></p>
+						</div>
+					{{/ each }}
+				</div>
+			</div>
+		</div>
+
+		<br><br>
+		<br><br>
+	</div>
+
+</template>

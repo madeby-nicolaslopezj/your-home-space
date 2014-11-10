@@ -1,0 +1,68 @@
+@import "/client/stylesheets/variables.import.less";
+
+@footer-text-color: rgb(114, 114, 114);
+@footer-background-color: rgb(49, 47, 47);
+
+.footer {
+	padding-top: 50px;
+	background-color: @footer-background-color;
+	color: @footer-text-color;
+
+	img.logo {
+		width: 78%;
+	}
+
+	.site-map {
+		margin-top: 5px;
+		text-align: right;
+
+		div  {
+			margin-bottom: 10px;
+
+			a {
+				color: @footer-text-color;
+				text-transform: uppercase;
+				font-weight: bold;
+				margin-left: 20px;
+
+				&:hover {
+					color: white;
+					text-decoration: none;
+				}
+			}
+		}
+		
+		@media (max-width: @screen-xs-max) {
+			margin-left: -15px;
+			margin-top: 25px;
+			margin-bottom: -20px;
+			text-align: center;
+		}
+	}
+
+
+	.social {
+		margin-top: 8px;
+		div {
+			background-color: @footer-text-color;
+			width: 30px;
+			height: 30px;
+			margin-left: 5px;
+			margin-right: 5px;
+			text-align: center;
+			border-radius: 50%;
+			font-size: 18px;
+			display: inline-block;
+			padding-top: 2px;
+
+			&:hover {
+				background-color: white;
+			}
+
+			a {
+				color: @footer-background-color;
+			}
+		}
+	} 
+
+}

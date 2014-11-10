@@ -1,0 +1,28 @@
+<template name="contact">
+
+	<div class="contact">
+		<span id="contact" class="symbol-target"></span>
+		<div class="container">
+
+			<div class="header">
+				<h1 class="section-title">{{ getDict.contactTitle }}</h1>
+				<p class="section-subtitle">{{ getDict.contactSubtitle }}</p>
+			</div>
+
+			<br><br>
+
+			<div class="row">
+				<div class="col-sm-7">
+					{{> contactForm }}
+					<br><br>
+				</div>
+				<div class="col-sm-5">
+					<p>{{{ getDict.contactText }}}</p>
+				</div>
+			</div>
+
+			<br><br>
+		</div>
+	</div>
+
+</template>

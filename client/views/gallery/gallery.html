@@ -1,0 +1,24 @@
+<template name="gallery">
+
+	<div class="container gallery">
+		<span id="gallery" class="symbol-target"></span>
+
+		<div class="header">
+			<h1 class="section-title">{{ dict 'galleryTitle' 'Gallery' }}</h1>
+			<p class="section-subtitle">{{ dict 'gallerySubtitle' 'We are a small team with great skills. See the faces behind' }}</p>
+		</div>
+
+		<br><br>
+
+		<div class="items">
+			{{#each images}}
+				<div class="item">
+					<img src="{{ image.link }}">
+				</div>
+			{{/each}}
+		</div>
+
+		<br><br>
+	</div>
+
+</template>

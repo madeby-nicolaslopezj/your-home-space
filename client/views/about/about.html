@@ -1,0 +1,34 @@
+<template name="about">
+
+	<div class="about background-alternative">
+		<span id="about-us" class="symbol-target"></span>
+		<div class="container">
+			<div class="header">
+				<h1 class="section-title">{{ dict 'aboutTitle' }}</h1>
+				<p class="section-subtitle">{{ dict 'aboutSubtitle' 'hola' }}</p>
+			</div>
+			<br><br>
+			<div class="row">
+				<div class="col-sm-6">
+					<img class="main-image" src="{{ dict 'aboutImageMain.link' 'http://lorempixel.com/300/300' }}">
+					<br><br>
+				</div>
+				<div class="col-sm-6">
+					<div>
+						{{{ dict 'aboutText' }}}
+					</div>
+					<br><br>
+					<div class="clearfix secondary-images">
+						<img src="{{ dict 'aboutImage1.link' 'http://lorempixel.com/300/300' }}">
+						<img src="{{ dict 'aboutImage2.link' 'http://lorempixel.com/300/300' }}">
+						<img src="{{ dict 'aboutImage3.link' 'http://lorempixel.com/300/300' }}">
+						<img src="{{ dict 'aboutImage4.link' 'http://lorempixel.com/300/300' }}">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<br><br>
+	</div>
+
+</template>

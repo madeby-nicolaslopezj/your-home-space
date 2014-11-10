@@ -1,0 +1,37 @@
+@text-color: rgb(255, 251, 239); 
+@background: rgb(240, 185, 190);
+@border-radius: 10px;
+
+.contact {
+	background-color: @background;
+	color: @text-color;
+
+	.section-title {
+		color: @text-color;
+	}
+
+	.section-subtitle {
+		color: @text-color !important;
+	}
+
+	.section-subtitle:after {
+		background:  @text-color !important;
+	}
+
+
+	.form-control {
+		color: @text-color !important;
+		background-color: transparent !important;
+		border: 1px solid @text-color !important;
+		border-radius: @border-radius !important;
+	}
+
+	.btn-default {
+		background-color: @text-color !important;
+		color: @background !important;
+		text-transform: uppercase;
+		border-radius: @border-radius !important;
+		border: 0 !important;
+	}
+
+}
