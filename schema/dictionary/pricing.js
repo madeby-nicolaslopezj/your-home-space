@@ -44,9 +44,6 @@ cms.dictionary.addDefinition('pricingItem3Image', 'pricing', {
 	type: cms.imageAttribute,
 	label: "Item 3 Image",
 	optional: true,
-	autoform: {
-		type: 'textarea',
-	}
 });
 
 cms.dictionary.addDefinition('pricingItem3Text', 'pricing', {
