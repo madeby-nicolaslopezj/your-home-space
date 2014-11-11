@@ -1,6 +1,13 @@
 Template.header.rendered = function () {
 	$('body').scrollspy({ target: '.navbar-list' })
-	$(window).on('activate.bs.scrollspy', function (e) {
-	    history.replaceState({}, "", $("a[href^='#']", e.target).attr("href"));
+
+	$(".nav-tabs li a").click(function() {
+		var id = $(this).attr('href');
+		
+		$('html, body').animate({
+	        scrollTop: $(id).offset().top
+	    }, 1000);
+
+	    return false;
 	});
 };

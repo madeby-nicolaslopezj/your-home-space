@@ -10,6 +10,42 @@ cms.dictionary.addDefinition('pricingSubtitle', 'pricing', {
 	optional: true,
 });
 
+cms.dictionary.addDefinition('pricingBackgroundColor', 'pricing', {
+	type: String,
+	label: "Background Color",
+	optional: true,
+	autoform: {
+		type: 'color',
+	}
+});
+
+cms.dictionary.addDefinition('pricingTitleColor', 'pricing', {
+	type: String,
+	label: "Title Text Color",
+	optional: true,
+	autoform: {
+		type: 'color',
+	}
+});
+
+cms.dictionary.addDefinition('pricingSubtitleColor', 'pricing', {
+	type: String,
+	label: "Sub-Title Text Color",
+	optional: true,
+	autoform: {
+		type: 'color',
+	}
+});
+
+cms.dictionary.addDefinition('pricingTextColor', 'pricing', {
+	type: String,
+	label: "Text Color",
+	optional: true,
+	autoform: {
+		type: 'color',
+	}
+});
+
 cms.dictionary.addDefinition('pricingItem1Image', 'pricing', {
 	type: cms.imageAttribute,
 	label: "Item 1 Image",

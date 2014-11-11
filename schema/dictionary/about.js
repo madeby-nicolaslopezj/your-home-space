@@ -19,6 +19,42 @@ cms.dictionary.addDefinition('aboutText', 'about', {
 	}
 });
 
+cms.dictionary.addDefinition('aboutBackgroundColor', 'about', {
+	type: String,
+	label: "Background Color",
+	optional: true,
+	autoform: {
+		type: 'color',
+	}
+});
+
+cms.dictionary.addDefinition('aboutTitleColor', 'about', {
+	type: String,
+	label: "Title Text Color",
+	optional: true,
+	autoform: {
+		type: 'color',
+	}
+});
+
+cms.dictionary.addDefinition('aboutSubtitleColor', 'about', {
+	type: String,
+	label: "Sub-Title Text Color",
+	optional: true,
+	autoform: {
+		type: 'color',
+	}
+});
+
+cms.dictionary.addDefinition('aboutTextColor', 'about', {
+	type: String,
+	label: "Text Color",
+	optional: true,
+	autoform: {
+		type: 'color',
+	}
+});
+
 cms.dictionary.addDefinition('aboutImageMain', 'about', {
 	type: cms.imageAttribute,
 	label: "Main Image",

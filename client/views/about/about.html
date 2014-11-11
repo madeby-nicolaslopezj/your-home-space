@@ -1,6 +1,6 @@
 <template name="about">
 
-	<div class="about background-alternative">
+	<div class="about">
 		<span id="about-us" class="symbol-target"></span>
 		<div class="container">
 			<div class="header">
@@ -14,7 +14,7 @@
 					<br><br>
 				</div>
 				<div class="col-sm-6">
-					<div>
+					<div class="text">
 						{{{ dict 'aboutText' }}}
 					</div>
 					<br><br>
@@ -30,5 +30,21 @@
 
 		<br><br>
 	</div>
-
+<style type="text/css">
+	.about {
+		background-color: {{ dict 'aboutBackgroundColor' }};
+	}
+	.about .section-title {
+		color: {{ dict 'aboutTitleColor' 'black' }};
+	}
+	.about .section-subtitle {
+		color: {{ dict 'aboutSubtitleColor' '#EA8825' }};
+	}
+	.about .section-subtitle:after {
+		background: {{ dict 'aboutSubtitleColor' '#EA8825' }};
+	}
+	.abour .text {
+		color: {{ dict 'aboutTextColor'  }};;
+	}
+</style>
 </template>

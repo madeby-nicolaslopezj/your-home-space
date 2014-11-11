@@ -1,6 +1,6 @@
 <template name="pricing">
 
-	<div class="pricing background-alternative">
+	<div class="pricing">
 		<span id="pricing" class="symbol-target"></span>
 
 		<div class="container">
@@ -35,5 +35,21 @@
 			<br><br>
 		</div>
 	</div>
-
+<style type="text/css">
+	.pricing {
+		background-color: {{ dict 'pricingBackgroundColor' }};
+	}
+	.pricing .section-title {
+		color: {{ dict 'pricingTitleColor' 'black' }};
+	}
+	.pricing .section-subtitle {
+		color: {{ dict 'pricingSubtitleColor' '#EA8825' }};
+	}
+	.pricing .section-subtitle:after {
+		background: {{ dict 'pricingSubtitleColor' '#EA8825' }};
+	}
+	.pricing .text {
+		color: {{ dict 'pricingTextColor'  }};;
+	}
+</style>
 </template>

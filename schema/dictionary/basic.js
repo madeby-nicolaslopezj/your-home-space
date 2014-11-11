@@ -10,9 +10,3 @@ cms.dictionary.addDefinition('siteLogo', 'basic', {
 	label: "Site Logo",
 	optional: true,
 });
-
-cms.dictionary.addDefinition('siteLogoFooter', 'basic', {
-	type: cms.imageAttribute,
-	label: "Logo Footer",
-	optional: true,
-});

@@ -24,5 +24,30 @@
 			<br><br>
 		</div>
 	</div>
+<style type="text/css">
+	.contact,
+	.contact {
+		background-color: {{ dict 'contactBackgroundColor' }};
+	}
 
+	.contact,
+	.contact .section-subtitle,
+	.contact .section-title,
+	.contact .form-control {
+		color: {{ dict 'contactTextColor' }} !important;
+	}
+
+	.contact .section-subtitle:after {
+		background: {{ dict 'contactTextColor' }} !important;
+	}
+
+	.contact .btn-default {
+		color: {{ dict 'contactBackgroundColor' }} !important;
+		background-color: {{ dict 'contactTextColor' }} !important;
+	}
+
+	.contact .form-control {
+		border: 1px solid {{ dict 'contactTextColor' }} !important;
+	}
+</style>
 </template>

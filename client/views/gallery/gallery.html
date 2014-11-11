@@ -1,24 +1,39 @@
 <template name="gallery">
 
-	<div class="container gallery">
-		<span id="gallery" class="symbol-target"></span>
+	<div class="gallery">
+		<div class="container clearfix">
+			<span id="gallery" class="symbol-target"></span>
 
-		<div class="header">
-			<h1 class="section-title">{{ dict 'galleryTitle' 'Gallery' }}</h1>
-			<p class="section-subtitle">{{ dict 'gallerySubtitle' 'We are a small team with great skills. See the faces behind' }}</p>
+			<div class="header">
+				<h1 class="section-title">{{ dict 'galleryTitle' 'Gallery' }}</h1>
+				<p class="section-subtitle">{{ dict 'gallerySubtitle' 'We are a small team with great skills. See the faces behind' }}</p>
+			</div>
+
+			<br><br>
+
+			<div class="items">
+				{{#each images}}
+					<div class="item">
+						<img src="{{ image.link }}">
+					</div>
+				{{/each}}
+			</div>
 		</div>
-
-		<br><br>
-
-		<div class="items">
-			{{#each images}}
-				<div class="item">
-					<img src="{{ image.link }}">
-				</div>
-			{{/each}}
-		</div>
-
 		<br><br>
 	</div>
 
+<style type="text/css">
+	.gallery {
+		background-color: {{ dict 'galleryBackgroundColor' }};
+	}
+	.gallery .section-title {
+		color: {{ dict 'galleryTitleColor' 'black' }};
+	}
+	.gallery .section-subtitle {
+		color: {{ dict 'gallerySubtitleColor' '#EA8825' }};
+	}
+	.gallery .section-subtitle:after {
+		background: {{ dict 'gallerySubtitleColor' '#EA8825' }};
+	}
+</style>
 </template>

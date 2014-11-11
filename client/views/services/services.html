@@ -1,22 +1,41 @@
 <template name="services">
 
-	<div class="services container">
-		<span id="services" class="symbol-target"></span>
+	<div class="services">
+		<div class="container">
+			<span id="services" class="symbol-target"></span>
 
-		<div class="header">
-			<h1 class="section-title">{{ getDict.servicesTitle }}</h1>
-			<p class="section-subtitle">{{ getDict.servicesSubtitle }}</p>
+			<div class="header">
+				<h1 class="section-title">{{ getDict.servicesTitle }}</h1>
+				<p class="section-subtitle">{{ getDict.servicesSubtitle }}</p>
+			</div>
+
+			<br><br>
+
+			<div class="items">
+				{{#each services}}
+					{{> servicesRow }}
+				{{/each}}
+			</div>
 		</div>
-
-		<br><br>
-
-		<div class="items">
-			{{#each services}}
-				{{> servicesRow }}
-			{{/each}}
-		</div>
-
 	</div>
+
+<style type="text/css">
+	.services {
+		background-color: {{ dict 'servicesBackgroundColor' }};
+	}
+	.services .section-title {
+		color: {{ dict 'servicesTitleColor' 'black' }};
+	}
+	.services .section-subtitle {
+		color: {{ dict 'servicesSubtitleColor' '#EA8825' }};
+	}
+	.services .section-subtitle:after {
+		background: {{ dict 'servicesSubtitleColor' '#EA8825' }};
+	}
+	.services .item {
+		color: {{ dict 'servicesTextColor' }};
+	}
+</style>
 
 </template>
 

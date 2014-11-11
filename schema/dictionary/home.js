@@ -10,6 +10,34 @@ cms.dictionary.addDefinition('homeSubtitle', 'home', {
 	optional: true,
 });
 
+cms.dictionary.addDefinition('homeBackgroundColor', 'home', {
+	type: String,
+	label: "Background Color",
+	optional: true,
+	autoform: {
+		type: 'color',
+	}
+});
+
+cms.dictionary.addDefinition('homeTitleColor', 'home', {
+	type: String,
+	label: "Title Text Color",
+	optional: true,
+	autoform: {
+		type: 'color',
+	}
+});
+
+cms.dictionary.addDefinition('homeSubtitleColor', 'home', {
+	type: String,
+	label: "Sub-Title Text Color",
+	optional: true,
+	autoform: {
+		type: 'color',
+	}
+});
+
+
 cms.dictionary.addDefinition('homeImage', 'home', {
 	type: cms.imageAttribute,
 	label: "Image",

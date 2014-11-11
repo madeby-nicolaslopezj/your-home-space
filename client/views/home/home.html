@@ -1,6 +1,6 @@
 <template name="home">
 
-	<div class="home background-alternative">
+	<div class="home">
 		<span id="home" class="symbol-target"></span>
 
 		<div class="container">
@@ -20,4 +20,18 @@
 
 	</div>
 
+<style type="text/css">
+	.home {
+		background-color: {{ dict 'homeBackgroundColor' }};
+	}
+	.home .section-title {
+		color: {{ dict 'homeTitleColor' 'black' }};
+	}
+	.home .section-subtitle {
+		color: {{ dict 'homeSubtitleColor' '#EA8825' }};
+	}
+	.home .section-subtitle:after {
+		background: {{ dict 'homeSubtitleColor' '#EA8825' }};
+	}
+</style>
 </template>
