@@ -1,0 +1,32 @@
+<template name="galleryFragment">
+	<div class="galleryFragment {{# if galleryItem }}active{{/ if }}">
+		{{# if galleryItem }}
+
+			<span class="close-button">
+				<i class="fa fa-close"></i>
+			</span>
+			<br><br>
+			
+
+			<div id="carousel-testimonials" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					{{# each galleryImages }}
+						<li data-target="#carousel-testimonials" data-slide-to="{{ index }}" class="{{# if isCero index }}active{{/ if }}"></li>
+					{{/ each }}
+				</ol>
+				<div class="carousel-inner" role="listbox">
+					{{# each galleryImages }}
+						<div class="item {{# if isCero index }}active{{/ if }}">
+							<img src="{{ link }}">
+						</div>
+					{{/ each }}
+				</div>
+			</div>
+
+			<br><br><br>
+
+			{{# markdown }}{{{ galleryItem.detailText }}}{{/ markdown }}
+
+		{{/ if }}
+	</div>
+</template>

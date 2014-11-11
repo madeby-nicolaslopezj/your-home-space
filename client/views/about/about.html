@@ -3,6 +3,9 @@
 	<div class="about">
 		<span id="about-us" class="symbol-target"></span>
 		<div class="container">
+
+			{{ > aboutFragment }}
+
 			<div class="header">
 				<h1 class="section-title">{{ dict 'aboutTitle' }}</h1>
 				<p class="section-subtitle">{{ dict 'aboutSubtitle' 'hola' }}</p>
@@ -19,10 +22,10 @@
 					</div>
 					<br><br>
 					<div class="clearfix secondary-images">
-						<img src="{{ dict 'aboutImage1.link' 'http://lorempixel.com/300/300' }}">
-						<img src="{{ dict 'aboutImage2.link' 'http://lorempixel.com/300/300' }}">
-						<img src="{{ dict 'aboutImage3.link' 'http://lorempixel.com/300/300' }}">
-						<img src="{{ dict 'aboutImage4.link' 'http://lorempixel.com/300/300' }}">
+						<img data-index="1" src="{{ dict 'aboutImage1.link' 'http://lorempixel.com/300/300' }}">
+						<img data-index="2" src="{{ dict 'aboutImage2.link' 'http://lorempixel.com/300/300' }}">
+						<img data-index="3" src="{{ dict 'aboutImage3.link' 'http://lorempixel.com/300/300' }}">
+						<img data-index="4" src="{{ dict 'aboutImage4.link' 'http://lorempixel.com/300/300' }}">
 					</div>
 				</div>
 			</div>

@@ -9,6 +9,18 @@ cms.addEntity('services', 'services', {
 		autoform: {
 			type: 'textarea',
 		}
+	},
+	detailText: {
+		type: String,
+		label: "Detail Text",
+		autoform: {
+			type: 'textarea',
+			rows: 10,
+		}
+	},
+	detailImages: {
+		type: [cms.imageAttribute],
+		label: "Detail Images"
 	}
 }, {
 	sidebarName: 'Services',

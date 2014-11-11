@@ -1,0 +1,28 @@
+@import "/client/stylesheets/variables.import.less";
+
+.galleryFragment {
+	text-align: center;
+	max-height: 0;
+	overflow: hidden;
+
+	-moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    -webkit-transition: 1s;
+    transition: 1s;
+
+	&.active {
+		max-height: 1500px;
+	}
+
+	.close-button {
+		cursor: pointer;
+		font-size: 30px;
+	}
+
+	.item {
+		img {
+			margin: 0 auto 0 auto;
+		}
+	}
+}

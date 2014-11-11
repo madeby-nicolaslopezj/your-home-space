@@ -11,3 +11,9 @@ Template.services.helpers({
         return chunks;
     }
 });
+
+Template.servicesItem.events({
+    'click .service-circle': function () {
+        Session.set('activeService', this);
+    }
+});

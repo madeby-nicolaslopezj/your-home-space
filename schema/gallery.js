@@ -3,6 +3,18 @@ cms.addEntity('gallery', 'gallery', {
 		type: cms.imageAttribute,
 		label: "Image"
 	},
+	detailText: {
+		type: String,
+		label: "Detail Text",
+		autoform: {
+			type: 'textarea',
+			rows: 10,
+		}
+	},
+	detailImages: {
+		type: [cms.imageAttribute],
+		label: "Detail Images"
+	}
 }, {
 	sidebarName: 'Gallery',
 	pluralName: 'Gallery',

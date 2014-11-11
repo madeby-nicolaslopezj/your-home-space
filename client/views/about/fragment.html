@@ -1,0 +1,32 @@
+<template name="aboutFragment">
+	<div class="aboutFragment {{# if aboutActiveText }}active{{/ if }}">
+		{{# if aboutActiveText }}
+
+			<span class="close-button">
+				<i class="fa fa-close"></i>
+			</span>
+			<br><br>
+			
+
+			<div id="carousel-testimonials" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					{{# each aboutActiveImages }}
+						<li data-target="#carousel-testimonials" data-slide-to="{{ index }}" class="{{# if isCero index }}active{{/ if }}"></li>
+					{{/ each }}
+				</ol>
+				<div class="carousel-inner" role="listbox">
+					{{# each aboutActiveImages }}
+						<div class="item {{# if isCero index }}active{{/ if }}">
+							<img src="{{ link }}">
+						</div>
+					{{/ each }}
+				</div>
+			</div>
+
+			<br><br><br>
+
+			{{# markdown }}{{{ aboutActiveText }}}{{/ markdown }}
+
+		{{/ if }}
+	</div>
+</template>

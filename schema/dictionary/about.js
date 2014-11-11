@@ -67,9 +67,41 @@ cms.dictionary.addDefinition('aboutImage1', 'about', {
 	optional: true,
 });
 
+cms.dictionary.addDefinition('aboutImage1Text', 'about', {
+	type: String,
+	label: "Image Small 1 Detail Text",
+	autoform: {
+		type: 'textarea',
+		rows: 10,
+	},
+	optional: true,
+});
+
+cms.dictionary.addDefinition('aboutImage1Images', 'about', {
+	type: [cms.imageAttribute],
+	label: "Image Small 1 Detail Images",
+	optional: true,
+});
+
 cms.dictionary.addDefinition('aboutImage2', 'about', {
 	type: cms.imageAttribute,
 	label: "Image Small 2",
+	optional: true,
+});
+
+cms.dictionary.addDefinition('aboutImage2Text', 'about', {
+	type: String,
+	label: "Image Small 2 Detail Text",
+	autoform: {
+		type: 'textarea',
+		rows: 10,
+	},
+	optional: true,
+});
+
+cms.dictionary.addDefinition('aboutImage2Images', 'about', {
+	type: [cms.imageAttribute],
+	label: "Image Small 2 Detail Images",
 	optional: true,
 });
 
@@ -79,8 +111,40 @@ cms.dictionary.addDefinition('aboutImage3', 'about', {
 	optional: true,
 });
 
+cms.dictionary.addDefinition('aboutImage3Text', 'about', {
+	type: String,
+	label: "Image Small 3 Detail Text",
+	autoform: {
+		type: 'textarea',
+		rows: 10,
+	},
+	optional: true,
+});
+
+cms.dictionary.addDefinition('aboutImage3Images', 'about', {
+	type: [cms.imageAttribute],
+	label: "Image Small 3 Detail Images",
+	optional: true,
+});
+
 cms.dictionary.addDefinition('aboutImage4', 'about', {
 	type: cms.imageAttribute,
 	label: "Image Small 4",
+	optional: true,
+});
+
+cms.dictionary.addDefinition('aboutImage4Text', 'about', {
+	type: String,
+	label: "Image Small 4 Detail Text",
+	autoform: {
+		type: 'textarea',
+		rows: 10,
+	},
+	optional: true,
+});
+
+cms.dictionary.addDefinition('aboutImage4Images', 'about', {
+	type: [cms.imageAttribute],
+	label: "Image Small 4 Detail Images",
 	optional: true,
 });
