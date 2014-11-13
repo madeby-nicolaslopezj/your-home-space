@@ -65,7 +65,8 @@ mobile-status-bar@1.0.1
 mongo-livedata@1.0.6
 mongo@1.0.8
 mrt:moment@2.8.1
-nicolaslopezj:cms@0.1.0
+natestrauser:font-awesome@4.2.0
+nicolaslopezj:cms@0.2.3
 nicolaslopezj:contactform@1.0.0
 npm-bcrypt@0.7.7
 observe-sequence@1.0.3
@@ -90,8 +91,8 @@ tracker@1.0.3
 ui@1.0.4
 underscore@1.0.1
 url@1.0.2
-useraccounts:bootstrap@1.1.1
-useraccounts:core@1.1.1
+useraccounts:bootstrap@1.2.3
+useraccounts:core@1.2.3
 webapp-hashing@1.0.1
 webapp@1.1.4
 wizonesolutions:underscore-string@1.0.0

@@ -5,17 +5,31 @@
 
 		<div class="container">
 			<div class="header">
-				<h1 class="section-title">{{ getDict.homeTitle }}</h1>
-				<p class="section-subtitle">{{ getDict.homeSubtitle }}</p>
+				<h1 class="section-title">{{ dict 'homeTitle' }}</h1>
+				<p class="section-subtitle">{{ dict 'homeSubtitle' }}</p>
 			</div>
 			<br><br>
 			<div class="row">
 				 <div class="col-sm-12">
-				 	<img class="home-image" src="{{ getDict.homeImage.link }}">
+				 	<div id="carousel-home" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							{{# each homeImages }}
+								<li data-target="#carousel-home" data-slide-to="{{ index }}" class="{{# if isCero index }}active{{/ if }}"></li>
+							{{/ each }}
+						</ol>
+						<div class="carousel-inner" role="listbox">
+							{{# each homeImages }}
+								<div class="item {{# if isCero index }}active{{/ if }}">
+									<img class="home-image" src="{{ link }}">
+								</div>
+							{{/ each }}
+						</div>
+					</div>
+				 	
 				 </div>
 			</div>
 
-			<br><br>
+			<br><br><br><br>
 		</div>
 
 	</div>

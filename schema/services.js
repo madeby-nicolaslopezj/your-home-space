@@ -1,6 +1,6 @@
-cms.addEntity('services', 'services', {
+cms.addEntity('services', {
 	image: {
-		type: cms.imageAttribute,
+		type: cms.attributes.image,
 		label: "Image"
 	},
 	text: {
@@ -19,7 +19,7 @@ cms.addEntity('services', 'services', {
 		}
 	},
 	detailImages: {
-		type: [cms.imageAttribute],
+		type: [cms.attributes.image],
 		label: "Detail Images"
 	}
 }, {
@@ -27,6 +27,6 @@ cms.addEntity('services', 'services', {
 	pluralName: 'Services',
 	singularName: 'Service',
 	defaultIndexTableFields: [
-		cms.imageIndexTableAttribute('image', 'Image'),
+		cms.attributesIndexTable.image('image', 'Image'),
 	]
 });

@@ -47,7 +47,7 @@ cms.dictionary.addDefinition('pricingTextColor', 'pricing', {
 });
 
 cms.dictionary.addDefinition('pricingItem1Image', 'pricing', {
-	type: cms.imageAttribute,
+	type: cms.attributes.image,
 	label: "Item 1 Image",
 	optional: true,
 });
@@ -62,7 +62,7 @@ cms.dictionary.addDefinition('pricingItem1Text', 'pricing', {
 });
 
 cms.dictionary.addDefinition('pricingItem2Image', 'pricing', {
-	type: cms.imageAttribute,
+	type: cms.attributes.image,
 	label: "Item 2 Image",
 	optional: true,
 });
@@ -77,7 +77,7 @@ cms.dictionary.addDefinition('pricingItem2Text', 'pricing', {
 });
 
 cms.dictionary.addDefinition('pricingItem3Image', 'pricing', {
-	type: cms.imageAttribute,
+	type: cms.attributes.image,
 	label: "Item 3 Image",
 	optional: true,
 });

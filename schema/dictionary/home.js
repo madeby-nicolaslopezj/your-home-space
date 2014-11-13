@@ -38,8 +38,8 @@ cms.dictionary.addDefinition('homeSubtitleColor', 'home', {
 });
 
 
-cms.dictionary.addDefinition('homeImage', 'home', {
-	type: cms.imageAttribute,
-	label: "Image",
+cms.dictionary.addDefinition('homeImages', 'home', {
+	type: [cms.attributes.image],
+	label: "Images",
 	optional: true,
 });

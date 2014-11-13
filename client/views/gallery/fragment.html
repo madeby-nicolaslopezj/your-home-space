@@ -6,6 +6,10 @@
 				<i class="fa fa-close"></i>
 			</span>
 			<br><br>
+
+			{{# markdown }}{{{ galleryItem.detailText }}}{{/ markdown }}
+			
+			<br><br>
 			
 
 			<div id="carousel-testimonials" class="carousel slide" data-ride="carousel">
@@ -24,8 +28,6 @@
 			</div>
 
 			<br><br><br>
-
-			{{# markdown }}{{{ galleryItem.detailText }}}{{/ markdown }}
 
 		{{/ if }}
 	</div>

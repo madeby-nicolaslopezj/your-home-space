@@ -56,13 +56,13 @@ cms.dictionary.addDefinition('aboutTextColor', 'about', {
 });
 
 cms.dictionary.addDefinition('aboutImageMain', 'about', {
-	type: cms.imageAttribute,
+	type: cms.attributes.image,
 	label: "Main Image",
 	optional: true,
 });
 
 cms.dictionary.addDefinition('aboutImage1', 'about', {
-	type: cms.imageAttribute,
+	type: cms.attributes.image,
 	label: "Image Small 1",
 	optional: true,
 });
@@ -78,13 +78,13 @@ cms.dictionary.addDefinition('aboutImage1Text', 'about', {
 });
 
 cms.dictionary.addDefinition('aboutImage1Images', 'about', {
-	type: [cms.imageAttribute],
+	type: [cms.attributes.image],
 	label: "Image Small 1 Detail Images",
 	optional: true,
 });
 
 cms.dictionary.addDefinition('aboutImage2', 'about', {
-	type: cms.imageAttribute,
+	type: cms.attributes.image,
 	label: "Image Small 2",
 	optional: true,
 });
@@ -100,13 +100,13 @@ cms.dictionary.addDefinition('aboutImage2Text', 'about', {
 });
 
 cms.dictionary.addDefinition('aboutImage2Images', 'about', {
-	type: [cms.imageAttribute],
+	type: [cms.attributes.image],
 	label: "Image Small 2 Detail Images",
 	optional: true,
 });
 
 cms.dictionary.addDefinition('aboutImage3', 'about', {
-	type: cms.imageAttribute,
+	type: cms.attributes.image,
 	label: "Image Small 3",
 	optional: true,
 });
@@ -122,13 +122,13 @@ cms.dictionary.addDefinition('aboutImage3Text', 'about', {
 });
 
 cms.dictionary.addDefinition('aboutImage3Images', 'about', {
-	type: [cms.imageAttribute],
+	type: [cms.attributes.image],
 	label: "Image Small 3 Detail Images",
 	optional: true,
 });
 
 cms.dictionary.addDefinition('aboutImage4', 'about', {
-	type: cms.imageAttribute,
+	type: cms.attributes.image,
 	label: "Image Small 4",
 	optional: true,
 });
@@ -144,7 +144,7 @@ cms.dictionary.addDefinition('aboutImage4Text', 'about', {
 });
 
 cms.dictionary.addDefinition('aboutImage4Images', 'about', {
-	type: [cms.imageAttribute],
+	type: [cms.attributes.image],
 	label: "Image Small 4 Detail Images",
 	optional: true,
 });

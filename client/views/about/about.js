@@ -4,5 +4,9 @@ Template.about.events({
     	var dict = cms.dictionary.collection.findOne();
     	Session.set('aboutActiveText', dict['aboutImage' + index + 'Text']);
 		Session.set('aboutActiveImages', dict['aboutImage' + index + 'Images']);
+
+		$('html, body').animate({
+	    	scrollTop: $(".aboutFragment").offset().top - 100
+	    }, 500);
     }
 });

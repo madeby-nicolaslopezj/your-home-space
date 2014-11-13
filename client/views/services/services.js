@@ -15,5 +15,9 @@ Template.services.helpers({
 Template.servicesItem.events({
     'click .service-circle': function () {
         Session.set('activeService', this);
+
+        $('html, body').animate({
+            scrollTop: $(".servicesFragment").offset().top - 100
+        }, 500);
     }
 });

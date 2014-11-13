@@ -1,6 +1,6 @@
-cms.addEntity('gallery', 'gallery', {
+cms.addEntity('gallery', {
 	image: {
-		type: cms.imageAttribute,
+		type: cms.attributes.image,
 		label: "Image"
 	},
 	detailText: {
@@ -12,7 +12,7 @@ cms.addEntity('gallery', 'gallery', {
 		}
 	},
 	detailImages: {
-		type: [cms.imageAttribute],
+		type: [cms.attributes.image],
 		label: "Detail Images"
 	}
 }, {
@@ -20,6 +20,6 @@ cms.addEntity('gallery', 'gallery', {
 	pluralName: 'Gallery',
 	singularName: 'Image',
 	defaultIndexTableFields: [
-		cms.imageIndexTableAttribute('image', 'Image'),
+		cms.attributesIndexTable.image('image', 'Image'),
 	]
 });

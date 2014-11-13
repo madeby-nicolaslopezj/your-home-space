@@ -1,4 +1,4 @@
-cms.addEntity('testimonials', 'testimonials', {
+cms.addEntity('testimonials', {
 	text: {
 		type: String,
 		label: "Text",

@@ -6,7 +6,7 @@ cms.dictionary.addDefinition('siteName', 'basic', {
 });
 
 cms.dictionary.addDefinition('siteLogo', 'basic', {
-	type: cms.imageAttribute,
+	type: cms.attributes.image,
 	label: "Site Logo",
 	optional: true,
 });

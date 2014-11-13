@@ -14,13 +14,13 @@ cms.dictionary.addDefinition('seoDescription', 'seo', {
 });
 
 cms.dictionary.addDefinition('seoImage', 'seo', {
-	type: cms.imageAttribute,
+	type: cms.attributes.image,
 	label: "Image",
 	optional: true,
 });
 
 cms.dictionary.addDefinition('seoFavIcon', 'seo', {
-	type: cms.imageAttribute,
+	type: cms.attributes.image,
 	label: "Fav Icon",
 	optional: true,
 });
