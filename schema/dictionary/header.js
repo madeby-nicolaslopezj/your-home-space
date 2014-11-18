@@ -30,3 +30,52 @@ orion.dictionary.addDefinition('headerAlternativeColor', 'header', {
 		type: 'color',
 	}
 });
+
+orion.dictionary.addDefinition('headerHomeTitle', 'header', {
+	type: String,
+	label: "Home Text",
+	optional: true,
+});
+
+orion.dictionary.addDefinition('headerServicesTitle', 'header', {
+	type: String,
+	label: "Services Text",
+	optional: true,
+});
+
+orion.dictionary.addDefinition('headerAboutUsTitle', 'header', {
+	type: String,
+	label: "About Us Text",
+	optional: true,
+});
+
+orion.dictionary.addDefinition('headerGalleryTitle', 'header', {
+	type: String,
+	label: "Gallery Text",
+	optional: true,
+});
+
+orion.dictionary.addDefinition('headerPricingTitle', 'header', {
+	type: String,
+	label: "Pricing Text",
+	optional: true,
+});
+
+orion.dictionary.addDefinition('headerInspireTitle', 'header', {
+	type: String,
+	label: "Inspire Text",
+	optional: true,
+});
+
+orion.dictionary.addDefinition('headerBlogTitle', 'header', {
+	type: String,
+	label: "Blog Text",
+	optional: true,
+});
+
+orion.dictionary.addDefinition('headerContactTitle', 'header', {
+	type: String,
+	label: "Contact Text",
+	optional: true,
+});
+
