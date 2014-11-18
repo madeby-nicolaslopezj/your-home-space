@@ -3,7 +3,6 @@ Router.map(function() {
 	this.route('site', {
 		path: '/',
 		loadingTemplate: 'adminLoading',
-		fastRender: true,
 		waitOn: function() {
 			return [orion.subs.subscribe('dictionary'), 
 			orion.subs.subscribe('entity', 'gallery'), 
@@ -37,7 +36,6 @@ Router.map(function() {
 	this.route('post', {
 		path: '/posts/:_id',
 		loadingTemplate: 'adminLoading',
-		fastRender: true,
 		waitOn: function() {
 			return [orion.subs.subscribe('dictionary'),
 			orion.subs.subscribe('entity', 'posts', {_id: this.params._id})];
