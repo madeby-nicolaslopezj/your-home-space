@@ -1,16 +1,16 @@
-cms.dictionary.addDefinition('testimonialsTitle', 'testimonials', {
+orion.dictionary.addDefinition('testimonialsTitle', 'testimonials', {
 	type: String,
 	label: "Title",
 	optional: true,
 });
 
-cms.dictionary.addDefinition('testimonialsSubtitle', 'testimonials', {
+orion.dictionary.addDefinition('testimonialsSubtitle', 'testimonials', {
 	type: String,
 	label: "Sub-Title",
 	optional: true,
 });
 
-cms.dictionary.addDefinition('testimonialsBackgroundColor', 'testimonials', {
+orion.dictionary.addDefinition('testimonialsBackgroundColor', 'testimonials', {
 	type: String,
 	label: "Background Color",
 	optional: true,
@@ -19,7 +19,7 @@ cms.dictionary.addDefinition('testimonialsBackgroundColor', 'testimonials', {
 	}
 });
 
-cms.dictionary.addDefinition('testimonialsTitleColor', 'testimonials', {
+orion.dictionary.addDefinition('testimonialsTitleColor', 'testimonials', {
 	type: String,
 	label: "Title Text Color",
 	optional: true,
@@ -28,7 +28,7 @@ cms.dictionary.addDefinition('testimonialsTitleColor', 'testimonials', {
 	}
 });
 
-cms.dictionary.addDefinition('testimonialsSubtitleColor', 'testimonials', {
+orion.dictionary.addDefinition('testimonialsSubtitleColor', 'testimonials', {
 	type: String,
 	label: "Sub-Title Text Color",
 	optional: true,
@@ -37,7 +37,7 @@ cms.dictionary.addDefinition('testimonialsSubtitleColor', 'testimonials', {
 	}
 });
 
-cms.dictionary.addDefinition('testimonialsTextColor', 'testimonials', {
+orion.dictionary.addDefinition('testimonialsTextColor', 'testimonials', {
 	type: String,
 	label: "Text Color",
 	optional: true,
@@ -46,7 +46,7 @@ cms.dictionary.addDefinition('testimonialsTextColor', 'testimonials', {
 	}
 });
 
-cms.dictionary.addDefinition('testimonialsIndicatorsColor', 'testimonials', {
+orion.dictionary.addDefinition('testimonialsIndicatorsColor', 'testimonials', {
 	type: String,
 	label: "Carousel Indicators Color",
 	optional: true,

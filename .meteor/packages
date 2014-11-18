@@ -4,7 +4,7 @@
 # but you can also edit it by hand.
 
 meteor-platform
-nicolaslopezj:cms
+orionjs:admin
 nicolaslopezj:contactform
 yogiben:bootstrap
 spiderable
@@ -12,3 +12,7 @@ meteorhacks:fast-render
 manuelschoebel:ms-seo
 markdown
 natestrauser:font-awesome
+orionjs:image-attribute
+iron:router
+less
+email

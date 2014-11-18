@@ -1,6 +1,6 @@
 Template.services.helpers({
     services: function () {
-        all = cms.entities.services.collection.find({}).fetch();
+        all = orion.entities.services.collection.find({}).fetch();
         chunks = [];
         size = 3
         while (all.length > 3) {

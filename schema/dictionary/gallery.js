@@ -1,16 +1,16 @@
-cms.dictionary.addDefinition('galleryTitle', 'gallery', {
+orion.dictionary.addDefinition('galleryTitle', 'gallery', {
 	type: String,
 	label: "Title",
 	optional: true,
 });
 
-cms.dictionary.addDefinition('gallerySubtitle', 'gallery', {
+orion.dictionary.addDefinition('gallerySubtitle', 'gallery', {
 	type: String,
 	label: "Sub-Title",
 	optional: true,
 });
 
-cms.dictionary.addDefinition('galleryBackgroundColor', 'gallery', {
+orion.dictionary.addDefinition('galleryBackgroundColor', 'gallery', {
 	type: String,
 	label: "Background Color",
 	optional: true,
@@ -19,7 +19,7 @@ cms.dictionary.addDefinition('galleryBackgroundColor', 'gallery', {
 	}
 });
 
-cms.dictionary.addDefinition('galleryTitleColor', 'gallery', {
+orion.dictionary.addDefinition('galleryTitleColor', 'gallery', {
 	type: String,
 	label: "Title Text Color",
 	optional: true,
@@ -28,7 +28,7 @@ cms.dictionary.addDefinition('galleryTitleColor', 'gallery', {
 	}
 });
 
-cms.dictionary.addDefinition('gallerySubtitleColor', 'gallery', {
+orion.dictionary.addDefinition('gallerySubtitleColor', 'gallery', {
 	type: String,
 	label: "Sub-Title Text Color",
 	optional: true,

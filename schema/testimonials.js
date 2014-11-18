@@ -1,4 +1,4 @@
-cms.addEntity('testimonials', {
+orion.addEntity('testimonials', {
 	text: {
 		type: String,
 		label: "Text",

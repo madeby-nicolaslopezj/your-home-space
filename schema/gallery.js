@@ -1,6 +1,14 @@
-cms.addEntity('gallery', {
+orion.addEntity('gallery', {
+	title: {
+		type: String,
+		label: "Title",
+	},
+	subtitle: {
+		type: String,
+		label: "Sub-Title",
+	},
 	image: {
-		type: cms.attributes.image,
+		type: orion.attributes.image,
 		label: "Image"
 	},
 	detailText: {
@@ -8,18 +16,20 @@ cms.addEntity('gallery', {
 		label: "Detail Text",
 		autoform: {
 			type: 'textarea',
-			rows: 10,
-		}
+		},
+		optional: true,
 	},
 	detailImages: {
-		type: [cms.attributes.image],
-		label: "Detail Images"
+		type: [orion.attributes.image],
+		label: "Detail Images",
+		optional: true,
 	}
 }, {
 	sidebarName: 'Gallery',
 	pluralName: 'Gallery',
 	singularName: 'Image',
 	defaultIndexTableFields: [
-		cms.attributesIndexTable.image('image', 'Image'),
+		{ key: 'title', label: 'Title' },
+		orion.adminIndexAttributeViews.image('image', 'Image'),
 	]
 });

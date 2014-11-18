@@ -1,6 +1,6 @@
-cms.addEntity('services', {
+orion.addEntity('services', {
 	image: {
-		type: cms.attributes.image,
+		type: orion.attributes.image,
 		label: "Image"
 	},
 	text: {
@@ -15,11 +15,10 @@ cms.addEntity('services', {
 		label: "Detail Text",
 		autoform: {
 			type: 'textarea',
-			rows: 10,
 		}
 	},
 	detailImages: {
-		type: [cms.attributes.image],
+		type: [orion.attributes.image],
 		label: "Detail Images"
 	}
 }, {
@@ -27,6 +26,6 @@ cms.addEntity('services', {
 	pluralName: 'Services',
 	singularName: 'Service',
 	defaultIndexTableFields: [
-		cms.attributesIndexTable.image('image', 'Image'),
+		orion.adminIndexAttributeViews.image('image', 'Image'),
 	]
 });

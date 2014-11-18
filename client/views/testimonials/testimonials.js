@@ -1,6 +1,6 @@
 Template.testimonials.helpers({
     testimonials: function () {
-        return cms.entities.testimonials.collection.find().map(function(document, index){
+        return orion.entities.testimonials.collection.find().map(function(document, index){
 			document.index = index;
 			return document;
 		});

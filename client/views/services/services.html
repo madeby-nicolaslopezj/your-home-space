@@ -8,7 +8,11 @@
 
 			<div class="header">
 				<h1 class="section-title">{{ dict 'servicesTitle' }}</h1>
-				<p class="section-subtitle">{{ dict 'servicesSubtitle' }}</p>
+				<div class="subtitle">
+{{# markdown }}
+{{ dict 'servicesSubtitle' }}
+{{/ markdown }}
+				</div>
 			</div>
 
 			<br><br>
@@ -28,11 +32,8 @@
 	.services .section-title {
 		color: {{ dict 'servicesTitleColor' 'black' }};
 	}
-	.services .section-subtitle {
+	.services .section {
 		color: {{ dict 'servicesSubtitleColor' '#EA8825' }};
-	}
-	.services .section-subtitle:after {
-		background: {{ dict 'servicesSubtitleColor' '#EA8825' }};
 	}
 	.services .item {
 		color: {{ dict 'servicesTextColor' }};

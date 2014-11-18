@@ -1,0 +1,38 @@
+<template name="inspire">
+
+	<div class="inspire">
+		<span id="inspire" class="symbol-target"></span>
+
+		<div class="container">
+			<div class="header">
+				<h1 class="section-title">{{ dict 'inspireTitle' }}</h1>
+						<div class="subtitle">
+{{# markdown }}
+{{ dict 'inspireSubtitle' }}
+{{/ markdown }}
+						</div>
+			</div>
+
+			<br><br><br>
+
+			<div class="text-center">
+				<img src="{{ dict 'inspireImage.link' }}">
+			</div>
+			<br><br><br>
+		</div>
+	</div>
+<style type="text/css">
+	.inspire {
+		background-color: {{ dict 'inspireBackgroundColor' }};
+	}
+	.inspire .section-title {
+		color: {{ dict 'inspireTitleColor' 'black' }};
+	}
+	.inspire .subtitle {
+		color: {{ dict 'inspireSubtitleColor' '#EA8825' }};
+	}
+	.inspire .text {
+		color: {{ dict 'inspireTextColor'  }};;
+	}
+</style>
+</template>

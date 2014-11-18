@@ -1,16 +1,16 @@
-cms.dictionary.addDefinition('pricingTitle', 'pricing', {
+orion.dictionary.addDefinition('pricingTitle', 'pricing', {
 	type: String,
 	label: "Title",
 	optional: true,
 });
 
-cms.dictionary.addDefinition('pricingSubtitle', 'pricing', {
+orion.dictionary.addDefinition('pricingSubtitle', 'pricing', {
 	type: String,
 	label: "Sub-Title",
 	optional: true,
 });
 
-cms.dictionary.addDefinition('pricingBackgroundColor', 'pricing', {
+orion.dictionary.addDefinition('pricingBackgroundColor', 'pricing', {
 	type: String,
 	label: "Background Color",
 	optional: true,
@@ -19,7 +19,7 @@ cms.dictionary.addDefinition('pricingBackgroundColor', 'pricing', {
 	}
 });
 
-cms.dictionary.addDefinition('pricingTitleColor', 'pricing', {
+orion.dictionary.addDefinition('pricingTitleColor', 'pricing', {
 	type: String,
 	label: "Title Text Color",
 	optional: true,
@@ -28,7 +28,7 @@ cms.dictionary.addDefinition('pricingTitleColor', 'pricing', {
 	}
 });
 
-cms.dictionary.addDefinition('pricingSubtitleColor', 'pricing', {
+orion.dictionary.addDefinition('pricingSubtitleColor', 'pricing', {
 	type: String,
 	label: "Sub-Title Text Color",
 	optional: true,
@@ -37,7 +37,7 @@ cms.dictionary.addDefinition('pricingSubtitleColor', 'pricing', {
 	}
 });
 
-cms.dictionary.addDefinition('pricingTextColor', 'pricing', {
+orion.dictionary.addDefinition('pricingTextColor', 'pricing', {
 	type: String,
 	label: "Text Color",
 	optional: true,
@@ -46,13 +46,13 @@ cms.dictionary.addDefinition('pricingTextColor', 'pricing', {
 	}
 });
 
-cms.dictionary.addDefinition('pricingItem1Image', 'pricing', {
-	type: cms.attributes.image,
+orion.dictionary.addDefinition('pricingItem1Image', 'pricing', {
+	type: orion.attributes.image,
 	label: "Item 1 Image",
 	optional: true,
 });
 
-cms.dictionary.addDefinition('pricingItem1Text', 'pricing', {
+orion.dictionary.addDefinition('pricingItem1Text', 'pricing', {
 	type: String,
 	label: "Item 1 Text",
 	optional: true,
@@ -61,13 +61,13 @@ cms.dictionary.addDefinition('pricingItem1Text', 'pricing', {
 	}
 });
 
-cms.dictionary.addDefinition('pricingItem2Image', 'pricing', {
-	type: cms.attributes.image,
+orion.dictionary.addDefinition('pricingItem2Image', 'pricing', {
+	type: orion.attributes.image,
 	label: "Item 2 Image",
 	optional: true,
 });
 
-cms.dictionary.addDefinition('pricingItem2Text', 'pricing', {
+orion.dictionary.addDefinition('pricingItem2Text', 'pricing', {
 	type: String,
 	label: "Item 2 Text",
 	optional: true,
@@ -76,13 +76,13 @@ cms.dictionary.addDefinition('pricingItem2Text', 'pricing', {
 	}
 });
 
-cms.dictionary.addDefinition('pricingItem3Image', 'pricing', {
-	type: cms.attributes.image,
+orion.dictionary.addDefinition('pricingItem3Image', 'pricing', {
+	type: orion.attributes.image,
 	label: "Item 3 Image",
 	optional: true,
 });
 
-cms.dictionary.addDefinition('pricingItem3Text', 'pricing', {
+orion.dictionary.addDefinition('pricingItem3Text', 'pricing', {
 	type: String,
 	label: "Item 3 Text",
 	optional: true,

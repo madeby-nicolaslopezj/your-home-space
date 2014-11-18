@@ -28,65 +28,25 @@ body {
 		position: absolute;
 		width: 18%;
 
-		@media (min-width: @screen-md-min) {
+		@media (min-width: @screen-sm-min) {
 			top: -12px;
 		}
 	}
 
-	.social-box {
-		position: absolute;
-		right: 0;
-		top: 0;
-		font-size: 12px;
-
-		@media (min-width: @screen-md-min) {
-			top: -8px;
-		}
-
-		.help {
+	.help {
+		@media (min-width: @screen-sm-min) {
 			text-align: right;
+			margin-right: 7px;
 		}
-
-		@media (max-width: @screen-xs-max) {
-			position: inherit;
-			right: 0;
-
-			.help {
-				text-align: center;
-			}
-		}
-
-		.social {
-			text-align: right;
-			margin-top: 2px;
-
-			@media (max-width: @screen-xs-max) {
-				text-align: center;
-			}
-
-			div {
-				display: inline-block;
-				background-color: #555555;
-				width: 25px;
-				height: 25px;
-				margin-left: 5px;
-				text-align: center;
-				border-radius: 4px;
-				font-size: 16px;
-				line-height: 24px;
-
-				a {
-					color: white;
-				}
-			}
-		} 
 	}
 
 	.nav-tabs {
-		margin-top: 20px;
+		font-family: @font-family-navbar;
+		margin-top: 0px;
 		border-bottom: 0;
-		font-size: 12px;
-		text-align:center;
+		font-size: 13px;
+		float: right;
+		text-align:right;
 
 		> li {
 			float:none;
@@ -100,7 +60,7 @@ body {
 			> a {
 				color: @gray;
 				font-weight: bold;
-				margin-right: 2px;
+				margin-right: 4px;
 				line-height: 1.0;
 				padding: 10px 4px 10px 4px;
 				border: 0;
@@ -122,8 +82,10 @@ body {
 		}
 	}
 
-	@media (max-width: @screen-sm-max) {
+	@media (max-width: @screen-xs-max) {
 		.nav-tabs {
+			float: none;
+			text-align: center;
 			padding-top: 15px;
 		}
 	}

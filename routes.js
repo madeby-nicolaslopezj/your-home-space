@@ -5,14 +5,14 @@ Router.map(function() {
 		loadingTemplate: 'adminLoading',
 		fastRender: true,
 		waitOn: function() {
-			return [cms.subs.subscribe('dictionary'), cms.subs.subscribe('entity', 'gallery'), cms.subs.subscribe('entity', 'services'), cms.subs.subscribe('entity', 'testimonials')];
+			return [orion.subs.subscribe('dictionary'), orion.subs.subscribe('entity', 'gallery'), orion.subs.subscribe('entity', 'services'), orion.subs.subscribe('entity', 'testimonials')];
 		},
 		onAfterAction: function() {
 			var dict;
 			if (!Meteor.isClient) {
 				return;
 			}
-			dict = cms.dictionary.collection.findOne();
+			dict = orion.dictionary.collection.findOne();
 			SEO.set({
 				title: dict.seoTitle,
 				link: {

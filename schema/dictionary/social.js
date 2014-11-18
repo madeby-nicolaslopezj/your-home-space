@@ -1,28 +1,28 @@
-cms.dictionary.addDefinition('email', 'social', {
+orion.dictionary.addDefinition('email', 'social', {
 	type: String,
 	label: "Email",
 	optional: true,
 });
 
-cms.dictionary.addDefinition('facebook', 'social', {
+orion.dictionary.addDefinition('facebook', 'social', {
 	type: String,
 	label: "Facebook",
 	optional: true,
 });
 
-cms.dictionary.addDefinition('instagram', 'social', {
+orion.dictionary.addDefinition('instagram', 'social', {
 	type: String,
 	label: "Instagram",
 	optional: true,
 });
 
-cms.dictionary.addDefinition('pinterest', 'social', {
+orion.dictionary.addDefinition('pinterest', 'social', {
 	type: String,
 	label: "Pinterest",
 	optional: true,
 });
 
-cms.dictionary.addDefinition('twitter', 'social', {
+orion.dictionary.addDefinition('twitter', 'social', {
 	type: String,
 	label: "Twitter",
 	optional: true,

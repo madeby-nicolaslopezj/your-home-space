@@ -3,10 +3,22 @@
 	<div class="home">
 		<span id="home" class="symbol-target"></span>
 
+		<div class="invisible-xs">
+			<br>
+		</div>
+
 		<div class="container">
 			<div class="header">
 				<h1 class="section-title">{{ dict 'homeTitle' }}</h1>
-				<p class="section-subtitle">{{ dict 'homeSubtitle' }}</p>
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1">
+						<div class="subtitle">
+{{# markdown }}
+{{ dict 'homeSubtitle' }}
+{{/ markdown }}
+						</div>
+					</div>
+				</div>
 			</div>
 			<br><br><br>
 			<div class="row">
@@ -24,12 +36,32 @@
 								</div>
 							{{/ each }}
 						</div>
+						<a class="left carousel-control" href="#carousel-home" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#carousel-home" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
 					</div>
 				 	
 				 </div>
 			</div>
 
-			<br><br><br><br>
+			<br><br>
+
+			<div class="social-box">
+				<div class="social clearfix">
+					<div><a href="mailto:{{ dict 'email' }}"><i class="fa fa-envelope"></i></a></div>
+					<div><a href="{{ dict 'facebook' }}" target="_BLANK"><i class="fa fa-facebook"></i></a></div>
+					<div><a href="{{ dict 'instagram' }}" target="_BLANK"><i class="fa fa-instagram"></i></a></div>
+					<div><a href="{{ dict 'pinterest' }}" target="_BLANK"><i class="fa fa-pinterest"></i></a></div>
+					<div><a href="{{ dict 'twitter' }}" target="_BLANK"><i class="fa fa-twitter"></i></a></div>
+				</div>
+			</div>
+
+			<br><br>
 		</div>
 
 	</div>
@@ -41,11 +73,8 @@
 	.home .section-title {
 		color: {{ dict 'homeTitleColor' 'black' }};
 	}
-	.home .section-subtitle {
+	.home .subtitle {
 		color: {{ dict 'homeSubtitleColor' '#EA8825' }};
-	}
-	.home .section-subtitle:after {
-		background: {{ dict 'homeSubtitleColor' '#EA8825' }};
 	}
 </style>
 </template>

@@ -1,9 +1,5 @@
 <template name="site">
 
-<meta http-equiv="X-UA-Compatible" content="IE=9" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href='http://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>
-
 <div class="site">
 	{{> header }}
 	{{> home }}
@@ -12,8 +8,23 @@
 	{{> gallery }}
 	{{> testimonials }}
 	{{> pricing }}
+	{{> inspire }}
 	{{> contact }}
+	{{> subscribe }}
 	{{> footer }}
 </div>
 
+<style type="text/css">
+.section-title {
+	font-size: {{ dict 'basicTitleFontSize' '45px' }};
+	font-weight: {{ dict 'basicTitleFontWeight' '100' }};
+}
+</style>
+
 </template>
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed|Raleway:400,100' rel='stylesheet' type='text/css'>
+</head>

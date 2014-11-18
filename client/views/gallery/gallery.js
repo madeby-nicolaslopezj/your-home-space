@@ -1,6 +1,6 @@
 Template.gallery.helpers({
     images: function () {
-        return cms.entities.gallery.collection.find({}).fetch();
+        return orion.entities.gallery.collection.find({}).fetch();
     }
 });
 

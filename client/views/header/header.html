@@ -5,17 +5,8 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<img class="logo" src="{{ dict 'siteLogo.link' }}">
-					<div class="social-box">
-						<div class="social clearfix">
-							<div><a href="mailto:{{ dict 'email' }}"><i class="fa fa-envelope"></i></a></div>
-							<div><a href="{{ dict 'facebook' }}" target="_BLANK"><i class="fa fa-facebook"></i></a></div>
-							<div><a href="{{ dict 'instagram' }}" target="_BLANK"><i class="fa fa-instagram"></i></a></div>
-							<div><a href="{{ dict 'pinterest' }}" target="_BLANK"><i class="fa fa-pinterest"></i></a></div>
-							<div><a href="{{ dict 'twitter' }}" target="_BLANK"><i class="fa fa-twitter"></i></a></div>
-						</div>
-						<div class="help">
-							<p>{{ dict 'headerHelpText' }}</p>
-						</div>
+					<div class="help">
+						<p>{{ dict 'headerHelpText' }}</p>
 					</div>
 					<div class="navbar-list">
 						<ul class="nav nav-tabs" role="tablist">
@@ -24,6 +15,8 @@
 							<li><a href="#about-us">About Us</a></li>
 							<li><a href="#gallery">Gallery</a></li>
 							<li><a href="#pricing">Pricing</a></li>
+							<li><a href="#inspire">Inspire Me</a></li>
+							<li><a href="#blog">Blog</a></li>
 							<li><a href="#contact">Contact</a></li>
 						</ul>
 					</div>
@@ -52,13 +45,6 @@
 	background-color: transparent;
 	color: {{ dict 'headerTextColor' }};
 	border-bottom: 4px solid {{ dict 'headerAlternativeColor' }};
-}
-
-.site-header .social-box .social div {
-	background-color: {{ dict 'headerTextColor' }};
-}
-.site-header .social-box .social div a {
-	color: {{ dict 'headerBackgroundColor' }};
 }
 </style>
 </template>

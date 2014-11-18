@@ -1,28 +1,28 @@
-cms.dictionary.addDefinition('siteLogoFooter', 'footer', {
-	type: cms.attributes.image,
+orion.dictionary.addDefinition('siteLogoFooter', 'footer', {
+	type: orion.attributes.image,
 	label: "Logo Footer",
 	optional: true,
 });
 
-cms.dictionary.addDefinition('footerText', 'footer', {
+orion.dictionary.addDefinition('footerText', 'footer', {
 	type: String,
 	label: "Text",
 	optional: true,
 });
 
-cms.dictionary.addDefinition('footerImage1', 'footer', {
-	type: cms.attributes.image,
+orion.dictionary.addDefinition('footerImage1', 'footer', {
+	type: orion.attributes.image,
 	label: "Image 1",
 	optional: true,
 });
 
-cms.dictionary.addDefinition('footerImage2', 'footer', {
-	type: cms.attributes.image,
+orion.dictionary.addDefinition('footerImage2', 'footer', {
+	type: orion.attributes.image,
 	label: "Image 2",
 	optional: true,
 });
 
-cms.dictionary.addDefinition('footerBackgroundColor', 'footer', {
+orion.dictionary.addDefinition('footerBackgroundColor', 'footer', {
 	type: String,
 	label: "Background Color",
 	optional: true,
@@ -31,7 +31,7 @@ cms.dictionary.addDefinition('footerBackgroundColor', 'footer', {
 	}
 });
 
-cms.dictionary.addDefinition('footerTextColor', 'footer', {
+orion.dictionary.addDefinition('footerTextColor', 'footer', {
 	type: String,
 	label: "Text Color",
 	optional: true,

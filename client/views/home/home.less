@@ -26,31 +26,56 @@
 		border: white 10px solid;
 	}
 
-	.section-subtitle {
+	.subtitle {
+		margin-top: 15px;
 		margin-bottom: -20px;
-	}
 
-	.section-subtitle:after {
-		display: block;
-		content: "";
-		width: 100px;
-		height: 0px;
-		position: absolute;
-		left: 0;
-		bottom: 0;
-		margin-left: 0;
+		p {
+			margin-bottom: 5px;
+		}
 	}
 
 	.carousel {
 		text-align: center;
 
+		.carousel-control.left,
+		.carousel-control.right {
+			background-image: none;
+		}
+
 		.item {
-			height: 400px;
 
 			img {
-				max-height: 400px;
+				width: 100%;
 				margin: 0 auto 0 auto;
 			}
 		}
+	}
+
+	.social-box {
+		.social {
+			text-align: right;
+			margin-top: 2px;
+
+			@media (max-width: @screen-xs-max) {
+				text-align: center;
+			}
+
+			div {
+				display: inline-block;
+				background-color: rgb(102, 102, 102);
+				width: 25px;
+				height: 25px;
+				margin-left: 5px;
+				text-align: center;
+				border-radius: 4px;
+				font-size: 16px;
+				line-height: 24px;
+
+				a {
+					color: white;
+				}
+			}
+		} 
 	}
 }

@@ -1,10 +1,10 @@
-cms.dictionary.addDefinition('headerHelpText', 'header', {
+orion.dictionary.addDefinition('headerHelpText', 'header', {
 	type: String,
 	label: "Help Text",
 	optional: true,
 });
 
-cms.dictionary.addDefinition('headerBackgroundColor', 'header', {
+orion.dictionary.addDefinition('headerBackgroundColor', 'header', {
 	type: String,
 	label: "Background Color",
 	optional: true,
@@ -13,7 +13,7 @@ cms.dictionary.addDefinition('headerBackgroundColor', 'header', {
 	}
 });
 
-cms.dictionary.addDefinition('headerTextColor', 'header', {
+orion.dictionary.addDefinition('headerTextColor', 'header', {
 	type: String,
 	label: "Text Color",
 	optional: true,
@@ -22,7 +22,7 @@ cms.dictionary.addDefinition('headerTextColor', 'header', {
 	}
 });
 
-cms.dictionary.addDefinition('headerAlternativeColor', 'header', {
+orion.dictionary.addDefinition('headerAlternativeColor', 'header', {
 	type: String,
 	label: "Alternative Color",
 	optional: true,

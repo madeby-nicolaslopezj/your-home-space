@@ -1,16 +1,16 @@
-cms.dictionary.addDefinition('aboutTitle', 'about', {
+orion.dictionary.addDefinition('aboutTitle', 'about', {
 	type: String,
 	label: "Title",
 	optional: true,
 });
 
-cms.dictionary.addDefinition('aboutSubtitle', 'about', {
+orion.dictionary.addDefinition('aboutSubtitle', 'about', {
 	type: String,
 	label: "Sub-Title",
 	optional: true,
 });
 
-cms.dictionary.addDefinition('aboutText', 'about', {
+orion.dictionary.addDefinition('aboutText', 'about', {
 	type: String,
 	label: "Text",
 	optional: true,
@@ -19,7 +19,7 @@ cms.dictionary.addDefinition('aboutText', 'about', {
 	}
 });
 
-cms.dictionary.addDefinition('aboutBackgroundColor', 'about', {
+orion.dictionary.addDefinition('aboutBackgroundColor', 'about', {
 	type: String,
 	label: "Background Color",
 	optional: true,
@@ -28,7 +28,7 @@ cms.dictionary.addDefinition('aboutBackgroundColor', 'about', {
 	}
 });
 
-cms.dictionary.addDefinition('aboutTitleColor', 'about', {
+orion.dictionary.addDefinition('aboutTitleColor', 'about', {
 	type: String,
 	label: "Title Text Color",
 	optional: true,
@@ -37,7 +37,7 @@ cms.dictionary.addDefinition('aboutTitleColor', 'about', {
 	}
 });
 
-cms.dictionary.addDefinition('aboutSubtitleColor', 'about', {
+orion.dictionary.addDefinition('aboutSubtitleColor', 'about', {
 	type: String,
 	label: "Sub-Title Text Color",
 	optional: true,
@@ -46,7 +46,7 @@ cms.dictionary.addDefinition('aboutSubtitleColor', 'about', {
 	}
 });
 
-cms.dictionary.addDefinition('aboutTextColor', 'about', {
+orion.dictionary.addDefinition('aboutTextColor', 'about', {
 	type: String,
 	label: "Text Color",
 	optional: true,
@@ -55,19 +55,19 @@ cms.dictionary.addDefinition('aboutTextColor', 'about', {
 	}
 });
 
-cms.dictionary.addDefinition('aboutImageMain', 'about', {
-	type: cms.attributes.image,
+orion.dictionary.addDefinition('aboutImageMain', 'about', {
+	type: orion.attributes.image,
 	label: "Main Image",
 	optional: true,
 });
 
-cms.dictionary.addDefinition('aboutImage1', 'about', {
-	type: cms.attributes.image,
+orion.dictionary.addDefinition('aboutImage1', 'about', {
+	type: orion.attributes.image,
 	label: "Image Small 1",
 	optional: true,
 });
 
-cms.dictionary.addDefinition('aboutImage1Text', 'about', {
+orion.dictionary.addDefinition('aboutImage1Text', 'about', {
 	type: String,
 	label: "Image Small 1 Detail Text",
 	autoform: {
@@ -77,19 +77,19 @@ cms.dictionary.addDefinition('aboutImage1Text', 'about', {
 	optional: true,
 });
 
-cms.dictionary.addDefinition('aboutImage1Images', 'about', {
-	type: [cms.attributes.image],
+orion.dictionary.addDefinition('aboutImage1Images', 'about', {
+	type: [orion.attributes.image],
 	label: "Image Small 1 Detail Images",
 	optional: true,
 });
 
-cms.dictionary.addDefinition('aboutImage2', 'about', {
-	type: cms.attributes.image,
+orion.dictionary.addDefinition('aboutImage2', 'about', {
+	type: orion.attributes.image,
 	label: "Image Small 2",
 	optional: true,
 });
 
-cms.dictionary.addDefinition('aboutImage2Text', 'about', {
+orion.dictionary.addDefinition('aboutImage2Text', 'about', {
 	type: String,
 	label: "Image Small 2 Detail Text",
 	autoform: {
@@ -99,19 +99,19 @@ cms.dictionary.addDefinition('aboutImage2Text', 'about', {
 	optional: true,
 });
 
-cms.dictionary.addDefinition('aboutImage2Images', 'about', {
-	type: [cms.attributes.image],
+orion.dictionary.addDefinition('aboutImage2Images', 'about', {
+	type: [orion.attributes.image],
 	label: "Image Small 2 Detail Images",
 	optional: true,
 });
 
-cms.dictionary.addDefinition('aboutImage3', 'about', {
-	type: cms.attributes.image,
+orion.dictionary.addDefinition('aboutImage3', 'about', {
+	type: orion.attributes.image,
 	label: "Image Small 3",
 	optional: true,
 });
 
-cms.dictionary.addDefinition('aboutImage3Text', 'about', {
+orion.dictionary.addDefinition('aboutImage3Text', 'about', {
 	type: String,
 	label: "Image Small 3 Detail Text",
 	autoform: {
@@ -121,19 +121,19 @@ cms.dictionary.addDefinition('aboutImage3Text', 'about', {
 	optional: true,
 });
 
-cms.dictionary.addDefinition('aboutImage3Images', 'about', {
-	type: [cms.attributes.image],
+orion.dictionary.addDefinition('aboutImage3Images', 'about', {
+	type: [orion.attributes.image],
 	label: "Image Small 3 Detail Images",
 	optional: true,
 });
 
-cms.dictionary.addDefinition('aboutImage4', 'about', {
-	type: cms.attributes.image,
+orion.dictionary.addDefinition('aboutImage4', 'about', {
+	type: orion.attributes.image,
 	label: "Image Small 4",
 	optional: true,
 });
 
-cms.dictionary.addDefinition('aboutImage4Text', 'about', {
+orion.dictionary.addDefinition('aboutImage4Text', 'about', {
 	type: String,
 	label: "Image Small 4 Detail Text",
 	autoform: {
@@ -143,8 +143,8 @@ cms.dictionary.addDefinition('aboutImage4Text', 'about', {
 	optional: true,
 });
 
-cms.dictionary.addDefinition('aboutImage4Images', 'about', {
-	type: [cms.attributes.image],
+orion.dictionary.addDefinition('aboutImage4Images', 'about', {
+	type: [orion.attributes.image],
 	label: "Image Small 4 Detail Images",
 	optional: true,
 });
