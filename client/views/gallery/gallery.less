@@ -6,22 +6,60 @@
 		float: left;
 		cursor: pointer;
 		width: 25%;
+		position: relative;
+		height: 0;
+		padding-bottom: 25%;
 
 		.image {
 			background-size: cover;
 			background-position: center;
 
 			.hover {
+				width: 100%;
+				position: relative;
+				height: 0;
+				padding-bottom: 60%;
+
+				.title {
+					font-size: 26px;
+				}
+
+				.subtitle {
+					font-size: 16px;
+					margin-top: 10px;
+				}
+
 				@media (max-width: @screen-md-max) {
-					height: 30%;
+					.title {
+						font-size: 22px;
+					}
+
+					.subtitle {
+						font-size: 16px;
+						margin-top: 10px;
+					}
 				}
 				@media (max-width: @screen-sm-max) {
-					height: 180px;
+					.title {
+						font-size: 20px;
+					}
+
+					.subtitle {
+						font-size: 14px;
+						margin-top: 10px;
+					}
 				}
 				@media (max-width: @screen-xs-max) {
-					height: 100px;
+					.title {
+						font-size: 15px;
+					}
+
+					.subtitle {
+						font-size: 11px;
+						margin-top: 10px;
+					}
 				}
-				height: 250px;
+				
 				color: white;
 				background-color: rgb(0, 0, 0);
 				text-align: center;
@@ -33,15 +71,6 @@
 
 				&:hover {
 					opacity: 1;
-				}
-
-				.title {
-					font-size: 26px;
-				}
-
-				.subtitle {
-					font-size: 16px;
-					margin-top: 10px;
 				}
 			}
 		}
