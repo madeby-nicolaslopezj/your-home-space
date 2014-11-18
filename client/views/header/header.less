@@ -11,6 +11,14 @@ body {
     display: inline-block;
 }
 
+@media (max-width: @screen-xs-max) {
+	.site-header .nav-tabs > li.active > a,
+	.site-header .nav-tabs > li.active > a:hover,
+	.site-header .nav-tabs > li.active > a:focus {
+		border-bottom: 4px solid transparent !important;
+	}
+}
+
 .site-header {
 	position: fixed;
 	background: #fff;
@@ -37,6 +45,7 @@ body {
 		@media (min-width: @screen-sm-min) {
 			text-align: right;
 			margin-right: 7px;
+			margin-top: -10px;
 		}
 	}
 

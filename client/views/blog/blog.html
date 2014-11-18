@@ -1,0 +1,62 @@
+<template name="blog">
+
+	<div class="blog">
+		<span id="blog" class="symbol-target"></span>
+
+		<div class="container">
+			<div class="header">
+				<h1 class="section-title">{{ dict 'blogTitle' }}</h1>
+						<div class="subtitle">
+{{# markdown }}
+{{ dict 'blogSubtitle' }}
+{{/ markdown }}
+						</div>
+			</div>
+
+			<br><br>
+
+			<div class="items">
+				{{#each posts}}
+					{{> postsRow }}
+				{{/each}}
+			</div>
+
+			<br><br>
+		</div>
+	</div>
+<style type="text/css">
+	.blog {
+		background-color: {{ dict 'blogBackgroundColor' }};
+	}
+	.blog .section-title {
+		color: {{ dict 'blogTitleColor' 'black' }};
+	}
+	.blog .subtitle {
+		color: {{ dict 'blogSubtitleColor' '#EA8825' }};
+	}
+	.blog .item .timeago {
+		color: {{ dict 'blogSubtitleColor' '#EA8825' }};
+	}
+	.blog .text {
+		color: {{ dict 'blogTextColor'  }};;
+	}
+</style>
+</template>
+
+<template name="postsRow">
+	<div class="row">
+		{{#each row }}
+			{{> postsItem}}
+		{{/each}}
+	</div>
+</template>
+
+<template name="postsItem">
+	<div class="col-sm-4 item">
+		<h3>{{ title }}</h3>
+		<p class="timeago">{{ livestamp createdAt }}</p>
+		<img src="{{ image.link }}">
+		<div class="preview">{{ preview }}</div>
+		<p><a href="{{ pathFor 'post' }}" class="btn btn-primary btn-xs">Read More</a></p>
+	</div>
+</template>
