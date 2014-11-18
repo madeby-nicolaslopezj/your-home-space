@@ -6,6 +6,31 @@ a, a:hover, a:active, a:focus {
    outline: 0 !important;
 }
 
+.carousel-control {
+  // Toggles
+  .btn-left,
+  .btn-right{
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+    font-size: 25px;
+  }
+  .btn-left{
+    left: 50%;
+    margin-left: -10px;
+  }
+  .btn-right{
+    right: 50%;
+    margin-right: -10px;
+  }
+}
+
+.carousel-control.left,
+.carousel-control.right {
+	background-image: none;
+}
+
 .background-alternative {
 	background-color: rgb(245, 245, 241);
 }
