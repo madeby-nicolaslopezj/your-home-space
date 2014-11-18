@@ -1,3 +1,5 @@
+@import "/client/stylesheets/variables.import.less";
+
 .gallery {
 
 	.items .item {
@@ -10,6 +12,15 @@
 			background-position: center;
 
 			.hover {
+				@media (max-width: @screen-md-max) {
+					height: 30%;
+				}
+				@media (max-width: @screen-sm-max) {
+					height: 180px;
+				}
+				@media (max-width: @screen-xs-max) {
+					height: 100px;
+				}
 				height: 250px;
 				color: white;
 				background-color: rgb(0, 0, 0);
@@ -25,7 +36,7 @@
 				}
 
 				.title {
-					font-size: 30px;
+					font-size: 26px;
 				}
 
 				.subtitle {

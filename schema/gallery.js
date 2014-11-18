@@ -2,10 +2,12 @@ orion.addEntity('gallery', {
 	title: {
 		type: String,
 		label: "Title",
+		max: 10
 	},
 	subtitle: {
 		type: String,
 		label: "Sub-Title",
+		max: 10
 	},
 	image: {
 		type: orion.attributes.image,
