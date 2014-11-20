@@ -13,7 +13,7 @@ markdown
 natestrauser:font-awesome
 orionjs:image-attribute
 orionjs:summernote
-iron:router
+iron:router@=1.0.1
 less
 email
 copleykj:livestamp
