@@ -7,7 +7,7 @@
 		<div class="posts">
 			<div class="container">
 				{{#each posts}}
-					{{> postsRow }}
+					{{> postsListRow }}
 				{{/each}}
 			</div>
 		</div>
@@ -17,15 +17,15 @@
 	</div>
 </template>
 
-<template name="postsRow">
+<template name="postsListRow">
 	<div class="row">
 		{{#each row }}
-			{{> postsItem}}
+			{{> postsListItem}}
 		{{/each}}
 	</div>
 </template>
 
-<template name="postsItem">
+<template name="postsListItem">
 	<div class="col-sm-4 item">
 		<h3>{{ title }}</h3>
 		<p class="timeago">{{ livestamp createdAt }}</p>
