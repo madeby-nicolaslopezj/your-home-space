@@ -33,6 +33,41 @@ Router.map(function() {
 		}
 	});
 
+	this.route('posts', {
+		path: '/posts',
+		loadingTemplate: 'adminLoading',
+		waitOn: function() {
+			return [orion.subs.subscribe('dictionary'),
+			orion.subs.subscribe('entity', 'posts')];
+		},
+		data: function() {
+			return {
+				posts: orion.entities.posts.collection.find({}, {sort: {createdAt:-1}})
+			}
+		},
+		onAfterAction: function() {
+			var dict;
+			if (!Meteor.isClient) {
+				return;
+			}
+			dict = orion.dictionary.collection.findOne();
+			SEO.set({
+				title: dict.seoTitle,
+				link: {
+					icon: dict.seoFavIcon.link,
+				},
+				meta: {
+					'description': dict.seoDescription
+				},
+				og: {
+					'title': dict.seoTitle,
+					'description': dict.seoDescription,
+					'image': dict.seoImage.link
+				}
+			});
+		}
+	});
+
 	this.route('post', {
 		path: '/posts/:_id',
 		loadingTemplate: 'adminLoading',

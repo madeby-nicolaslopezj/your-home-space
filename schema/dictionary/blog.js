@@ -13,6 +13,12 @@ orion.dictionary.addDefinition('blogSubtitle', 'blog', {
 	}
 });
 
+orion.dictionary.addDefinition('blogViewAllText', 'blog', {
+	type: String,
+	label: "View All Button Text",
+	optional: true,
+});
+
 orion.dictionary.addDefinition('blogBackgroundColor', 'blog', {
 	type: String,
 	label: "Background Color",

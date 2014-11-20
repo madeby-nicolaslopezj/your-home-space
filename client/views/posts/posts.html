@@ -1,0 +1,36 @@
+<template name="posts">
+	<div class="site on-post">
+		{{> header onpost=true }}
+		<div class="hidden-xs">
+			<br><br><br><br><br><br>
+		</div>
+		<div class="posts">
+			<div class="container">
+				{{#each posts}}
+					{{> postsRow }}
+				{{/each}}
+			</div>
+		</div>
+		<br><br>
+		{{> subscribe }}
+		{{> footer }}
+	</div>
+</template>
+
+<template name="postsRow">
+	<div class="row">
+		{{#each row }}
+			{{> postsItem}}
+		{{/each}}
+	</div>
+</template>
+
+<template name="postsItem">
+	<div class="col-sm-4 item">
+		<h3>{{ title }}</h3>
+		<p class="timeago">{{ livestamp createdAt }}</p>
+		<img src="{{ image.link }}">
+		<div class="preview">{{ preview }}</div>
+		<p><a href="{{ pathFor 'post' }}" class="btn btn-primary btn-xs">Read More</a></p>
+	</div>
+</template>

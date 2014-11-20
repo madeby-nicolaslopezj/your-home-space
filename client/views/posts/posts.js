@@ -1,6 +1,6 @@
-Template.blog.helpers({
+Template.posts.helpers({
     posts: function () {
-        all = orion.entities.posts.collection.find({}, {sort: {createdAt:-1}, limit:6}).fetch();
+        all = orion.entities.posts.collection.find({}, {sort: {createdAt:-1}}).fetch();
         chunks = [];
         size = 3
         while (all.length > 3) {

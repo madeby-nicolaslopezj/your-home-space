@@ -22,6 +22,14 @@
 			</div>
 
 			<br><br>
+
+			<div class="text-center">
+				<p>
+					<a href="{{ pathFor 'posts' }}" class="btn btn-primary">{{ dict 'blogViewAllText' 'View All' }}</a>
+				</p>
+			</div>
+
+			<br><br>
 		</div>
 	</div>
 <style type="text/css">
@@ -33,6 +41,17 @@
 	}
 	.blog .subtitle {
 		color: {{ dict 'blogSubtitleColor' '#EA8825' }};
+	}
+	.blog .subtitle:after {
+		display: block;
+		content: "";
+		width: 100px;
+		height: 1px;
+		position: relative;
+		left: 50%;
+		bottom: -10px;
+		margin-left: -50px;
+		background: {{ dict 'blogSubtitleColor' '#EA8825' }};
 	}
 	.blog .item .timeago {
 		color: {{ dict 'blogSubtitleColor' '#EA8825' }};

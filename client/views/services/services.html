@@ -15,7 +15,7 @@
 				</div>
 			</div>
 
-			<br><br>
+			<br><br><br>
 
 			<div class="items">
 				{{#each services}}
@@ -32,8 +32,19 @@
 	.services .section-title {
 		color: {{ dict 'servicesTitleColor' 'black' }};
 	}
-	.services .section {
+	.services .subtitle {
 		color: {{ dict 'servicesSubtitleColor' '#EA8825' }};
+	}
+	.services .subtitle:after {
+		display: block;
+		content: "";
+		width: 100px;
+		height: 1px;
+		position: relative;
+		left: 50%;
+		bottom: -10px;
+		margin-left: -50px;
+		background: {{ dict 'servicesSubtitleColor' '#EA8825' }};
 	}
 	.services .item {
 		color: {{ dict 'servicesTextColor' }};
