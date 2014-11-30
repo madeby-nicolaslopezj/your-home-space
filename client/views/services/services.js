@@ -6,6 +6,10 @@ Template.services.helpers({
         while (all.length > 3) {
             chunks.push({ row: all.slice(0, 3)});
             all = all.slice(3);
+            all.map(function (item) {
+                item.text = item.text.replace(/(?:\r\n|\r|\n)/g, '<br />');
+                return item;
+            });
         }
         chunks.push({row: all});
         return chunks;
