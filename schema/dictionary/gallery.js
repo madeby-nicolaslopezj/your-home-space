@@ -8,6 +8,9 @@ orion.dictionary.addDefinition('gallerySubtitle', 'gallery', {
 	type: String,
 	label: "Sub-Title",
 	optional: true,
+	autoform: {
+		type: 'textarea',
+	}
 });
 
 orion.dictionary.addDefinition('galleryBackgroundColor', 'gallery', {

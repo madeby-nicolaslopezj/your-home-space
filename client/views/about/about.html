@@ -8,7 +8,11 @@
 
 			<div class="header">
 				<h1 class="section-title">{{ dict 'aboutTitle' }}</h1>
-				<p class="section-subtitle">{{ dict 'aboutSubtitle' 'hola' }}</p>
+<div class="subtitle">
+{{# markdown }}
+{{ dict 'aboutSubtitle' }}
+{{/ markdown }}
+</div>
 			</div>
 			<br><br>
 			<div class="row">
@@ -18,7 +22,7 @@
 				</div>
 				<div class="col-sm-6">
 					<div class="text">
-						{{{ dict 'aboutText' }}}
+						{{{ dict 'aboutText.content' 'mkkmk' }}}
 					</div>
 					<br><br>
 					<div class="clearfix secondary-images">
@@ -40,13 +44,13 @@
 	.about .section-title {
 		color: {{ dict 'aboutTitleColor' 'black' }};
 	}
-	.about .section-subtitle {
+	.about .subtitle {
 		color: {{ dict 'aboutSubtitleColor' '#EA8825' }};
 	}
-	.about .section-subtitle:after {
+	.about .subtitle:after {
 		background: {{ dict 'aboutSubtitleColor' '#EA8825' }};
 	}
-	.abour .text {
+	.about .text {
 		color: {{ dict 'aboutTextColor'  }};;
 	}
 </style>

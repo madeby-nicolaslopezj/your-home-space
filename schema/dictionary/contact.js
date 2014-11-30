@@ -8,6 +8,9 @@ orion.dictionary.addDefinition('contactSubtitle', 'contact', {
 	type: String,
 	label: "Sub-Title",
 	optional: true,
+	autoform: {
+		type: 'textarea',
+	}
 });
 
 orion.dictionary.addDefinition('contactText', 'contact', {

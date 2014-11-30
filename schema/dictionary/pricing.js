@@ -8,6 +8,9 @@ orion.dictionary.addDefinition('pricingSubtitle', 'pricing', {
 	type: String,
 	label: "Sub-Title",
 	optional: true,
+	autoform: {
+		type: 'textarea',
+	}
 });
 
 orion.dictionary.addDefinition('pricingBackgroundColor', 'pricing', {
@@ -53,12 +56,9 @@ orion.dictionary.addDefinition('pricingItem1Image', 'pricing', {
 });
 
 orion.dictionary.addDefinition('pricingItem1Text', 'pricing', {
-	type: String,
+	type: orion.attributes.summernote,
 	label: "Item 1 Text",
 	optional: true,
-	autoform: {
-		type: 'textarea',
-	}
 });
 
 orion.dictionary.addDefinition('pricingItem2Image', 'pricing', {
@@ -68,12 +68,9 @@ orion.dictionary.addDefinition('pricingItem2Image', 'pricing', {
 });
 
 orion.dictionary.addDefinition('pricingItem2Text', 'pricing', {
-	type: String,
+	type: orion.attributes.summernote,
 	label: "Item 2 Text",
 	optional: true,
-	autoform: {
-		type: 'textarea',
-	}
 });
 
 orion.dictionary.addDefinition('pricingItem3Image', 'pricing', {
@@ -83,10 +80,7 @@ orion.dictionary.addDefinition('pricingItem3Image', 'pricing', {
 });
 
 orion.dictionary.addDefinition('pricingItem3Text', 'pricing', {
-	type: String,
+	type: orion.attributes.summernote,
 	label: "Item 3 Text",
 	optional: true,
-	autoform: {
-		type: 'textarea',
-	}
 });

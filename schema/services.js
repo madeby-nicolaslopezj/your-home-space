@@ -11,11 +11,8 @@ orion.addEntity('services', {
 		}
 	},
 	detailText: {
-		type: String,
+		type: orion.attributes.summernote,
 		label: "Detail Text",
-		autoform: {
-			type: 'textarea',
-		}
 	},
 	detailImages: {
 		type: [orion.attributes.image],

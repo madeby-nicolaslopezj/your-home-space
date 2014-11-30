@@ -8,15 +8,15 @@ orion.dictionary.addDefinition('aboutSubtitle', 'about', {
 	type: String,
 	label: "Sub-Title",
 	optional: true,
-});
-
-orion.dictionary.addDefinition('aboutText', 'about', {
-	type: String,
-	label: "Text",
-	optional: true,
 	autoform: {
 		type: 'textarea',
 	}
+});
+
+orion.dictionary.addDefinition('aboutText', 'about', {
+	type: orion.attributes.summernote,
+	label: "Text",
+	optional: true,
 });
 
 orion.dictionary.addDefinition('aboutBackgroundColor', 'about', {
@@ -68,12 +68,8 @@ orion.dictionary.addDefinition('aboutImage1', 'about', {
 });
 
 orion.dictionary.addDefinition('aboutImage1Text', 'about', {
-	type: String,
+	type: orion.attributes.summernote,
 	label: "Image Small 1 Detail Text",
-	autoform: {
-		type: 'textarea',
-		rows: 10,
-	},
 	optional: true,
 });
 
@@ -90,12 +86,8 @@ orion.dictionary.addDefinition('aboutImage2', 'about', {
 });
 
 orion.dictionary.addDefinition('aboutImage2Text', 'about', {
-	type: String,
+	type: orion.attributes.summernote,
 	label: "Image Small 2 Detail Text",
-	autoform: {
-		type: 'textarea',
-		rows: 10,
-	},
 	optional: true,
 });
 
@@ -112,12 +104,8 @@ orion.dictionary.addDefinition('aboutImage3', 'about', {
 });
 
 orion.dictionary.addDefinition('aboutImage3Text', 'about', {
-	type: String,
+	type: orion.attributes.summernote,
 	label: "Image Small 3 Detail Text",
-	autoform: {
-		type: 'textarea',
-		rows: 10,
-	},
 	optional: true,
 });
 
@@ -134,12 +122,8 @@ orion.dictionary.addDefinition('aboutImage4', 'about', {
 });
 
 orion.dictionary.addDefinition('aboutImage4Text', 'about', {
-	type: String,
+	type: orion.attributes.summernote,
 	label: "Image Small 4 Detail Text",
-	autoform: {
-		type: 'textarea',
-		rows: 10,
-	},
 	optional: true,
 });
 

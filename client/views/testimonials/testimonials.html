@@ -21,7 +21,7 @@
 					<div class="carousel-inner" role="listbox">
 						{{# each testimonials }}
 							<div class="item {{# if isCero index }}active{{/ if }}">
-								<p>{{ text }}</p>
+								<p>{{{ text.content }}}</p>
 								<p><i>{{ author }}</i></p>
 							</div>
 						{{/ each }}

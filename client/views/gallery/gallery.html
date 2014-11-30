@@ -8,7 +8,11 @@
 
 			<div class="header">
 				<h1 class="section-title">{{ dict 'galleryTitle' 'Gallery' }}</h1>
-				<p class="section-subtitle">{{ dict 'gallerySubtitle' 'We are a small team with great skills. See the faces behind' }}</p>
+<div class="subtitle">
+{{# markdown }}
+{{ dict 'gallerySubtitle' }}
+{{/ markdown }}
+</div>
 			</div>
 
 			<br><br>
@@ -36,10 +40,10 @@
 	.gallery .section-title {
 		color: {{ dict 'galleryTitleColor' 'black' }};
 	}
-	.gallery .section-subtitle {
+	.gallery .subtitle {
 		color: {{ dict 'gallerySubtitleColor' '#EA8825' }};
 	}
-	.gallery .section-subtitle:after {
+	.gallery .subtitle:after {
 		background: {{ dict 'gallerySubtitleColor' '#EA8825' }};
 	}
 </style>

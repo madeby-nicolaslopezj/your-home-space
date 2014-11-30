@@ -15,6 +15,11 @@ orion.addEntity('posts', {
 		label: "Image",
 		optional: true
 	},
+	imageInside: {
+		type: orion.attributes.image,
+		label: "Image Inside",
+		optional: true
+	},
 	body: {
 		type: orion.attributes.summernote,
 		label: "Body",

@@ -6,7 +6,11 @@
 
 			<div class="header">
 				<h1 class="section-title">{{ dict 'contactTitle' }}</h1>
-				<p class="section-subtitle">{{ dict 'contactSubtitle' }}</p>
+<div class="subtitle">
+{{# markdown }}
+{{ dict 'contactSubtitle' }}
+{{/ markdown }}
+</div>
 			</div>
 
 			<br><br>
@@ -31,13 +35,13 @@
 	}
 
 	.contact,
-	.contact .section-subtitle,
+	.contact .subtitle,
 	.contact .section-title,
 	.contact .form-control {
 		color: {{ dict 'contactTextColor' }} !important;
 	}
 
-	.contact .section-subtitle:after {
+	.contact .subtitle:after {
 		background: {{ dict 'contactTextColor' }} !important;
 	}
 

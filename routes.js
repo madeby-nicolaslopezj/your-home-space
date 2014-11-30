@@ -73,7 +73,7 @@ Router.map(function() {
 		loadingTemplate: 'adminLoading',
 		waitOn: function() {
 			return [orion.subs.subscribe('dictionary'),
-			orion.subs.subscribe('entity', 'posts', {_id: this.params._id})];
+			orion.subs.subscribe('entity', 'posts')];
 		},
 		data: function() {
 			return {

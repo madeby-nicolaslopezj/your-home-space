@@ -1,0 +1,25 @@
+<template name="postsSidebar">
+	<h3>Recent Posts</h3>
+	<hr>
+	<div class="recent">
+		{{# each recent }}
+		<p><a href="{{ pathFor 'post' }}">{{ title }}</a></p>
+		{{/ each }}
+	</div>
+
+	<br><br>
+	<h3>Archive</h3>
+	<hr>
+	<div class="recent">
+		{{# each months }}
+		<p>{{ this }}</p>
+		{{/ each }}
+	</div>
+
+	<br><br>
+	<div class="pinterest">
+		<a data-pin-do="embedBoard" href="http://www.pinterest.com/yourhomespace/yourhomespace/" data-pin-scale-height="400" >Follow YourHomeSpace's board YourHomeSpace on Pinterest.</a>
+	</div>
+
+	
+</template>

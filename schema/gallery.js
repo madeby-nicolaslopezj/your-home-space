@@ -14,11 +14,8 @@ orion.addEntity('gallery', {
 		label: "Image"
 	},
 	detailText: {
-		type: String,
+		type: orion.attributes.summernote,
 		label: "Detail Text",
-		autoform: {
-			type: 'textarea',
-		},
 		optional: true,
 	},
 	detailImages: {

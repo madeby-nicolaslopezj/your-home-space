@@ -1,10 +1,7 @@
 orion.addEntity('testimonials', {
 	text: {
-		type: String,
+		type: orion.attributes.summernote,
 		label: "Text",
-		autoform: {
-			type: 'textarea',
-		}
 	},
 	author: {
 		type: String,

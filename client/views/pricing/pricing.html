@@ -6,7 +6,11 @@
 		<div class="container">
 			<div class="header">
 				<h1 class="section-title">{{ dict 'pricingTitle' }}</h1>
-				<p class="section-subtitle">{{ dict 'pricingSubtitle' }}</p>
+<div class="subtitle">
+{{# markdown }}
+{{ dict 'pricingSubtitle' }}
+{{/ markdown }}
+</div>
 			</div>
 
 			<br><br>
@@ -15,19 +19,19 @@
 				<div class="col-sm-4 ">
 					<img src="{{ dict 'pricingItem1Image.link' 'http://lorempixel.com/300/300' }}">
 					<br><br>
-					<p>{{{ dict 'pricingItem1Text' }}}</p>
+					<p>{{{ dict 'pricingItem1Text.content' }}}</p>
 					<br><br>
 				</div>
 				<div class="col-sm-4">
 					<img src="{{ dict 'pricingItem2Image.link' 'http://lorempixel.com/300/300' }}">
 					<br><br>
-					<p>{{{ dict 'pricingItem2Text' }}}</p>
+					<p>{{{ dict 'pricingItem2Text.content' }}}</p>
 					<br><br>
 				</div>
 				<div class="col-sm-4">
 					<img src="{{ dict 'pricingItem3Image.link' 'http://lorempixel.com/300/300' }}">
 					<br><br>
-					<p>{{{ dict 'pricingItem3Text' }}}</p>
+					<p>{{{ dict 'pricingItem3Text.content' }}}</p>
 					<br><br>
 				</div>
 			</div>
@@ -42,10 +46,10 @@
 	.pricing .section-title {
 		color: {{ dict 'pricingTitleColor' 'black' }};
 	}
-	.pricing .section-subtitle {
+	.pricing .subtitle {
 		color: {{ dict 'pricingSubtitleColor' '#EA8825' }};
 	}
-	.pricing .section-subtitle:after {
+	.pricing .subtitle:after {
 		background: {{ dict 'pricingSubtitleColor' '#EA8825' }};
 	}
 	.pricing .text {

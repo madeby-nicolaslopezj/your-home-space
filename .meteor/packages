@@ -13,7 +13,9 @@ markdown
 natestrauser:font-awesome
 orionjs:image-attribute
 orionjs:summernote
+orionjs:s3
 iron:router@=1.0.1
 less
 email
 copleykj:livestamp
+mrt:moment
