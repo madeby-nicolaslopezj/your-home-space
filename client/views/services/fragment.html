@@ -6,32 +6,38 @@
 				<i class="fa fa-close"></i>
 			</span>
 			<br><br>
-			<div class="text-left col-sm-10 col-sm-offset-1">
-				{{{ service.detailText.content }}}
+			<div class="row">
+				<div class="text-left col-sm-10 col-sm-offset-1">
+					{{{ service.detailText.content }}}
+				</div>
 			</div>
+			
 			<br><br>
 
-			<div id="carousel-services" class="carousel slide" data-ride="carousel">
-				<ol class="carousel-indicators">
-					{{# each serviceImages }}
-						<li data-target="#carousel-services" data-slide-to="{{ index }}" class="{{# if isCero index }}active{{/ if }}"></li>
-					{{/ each }}
-				</ol>
-				<div class="carousel-inner" role="listbox">
-					{{# each serviceImages }}
-						<div class="item {{# if isCero index }}active{{/ if }}">
-							<img src="{{ link }}">
+			<div class="row">
+				<div class="col-sm-12">
+					<div id="carousel-services" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							{{# each serviceImages }}
+								<li data-target="#carousel-services" data-slide-to="{{ index }}" class="{{# if isCero index }}active{{/ if }}"></li>
+							{{/ each }}
+						</ol>
+						<div class="carousel-inner" role="listbox">
+							{{# each serviceImages }}
+								<div class="item {{# if isCero index }}active{{/ if }}">
+									<img src="{{ link }}">
+								</div>
+							{{/ each }}
 						</div>
-					{{/ each }}
+						<a class="left carousel-control" href="#carousel-services" role="button" data-slide="prev">
+							<span class="btn-left"><i class="fa fa-chevron-left"></i></span>
+						</a>
+						<a class="right carousel-control" href="#carousel-services" role="button" data-slide="next">
+							<span class="btn-right"><i class="fa fa-chevron-right"></i></span>
+						</a>
+					</div>
 				</div>
-				<a class="left carousel-control" href="#carousel-services" role="button" data-slide="prev">
-					<span class="btn-left"><i class="fa fa-chevron-left"></i></span>
-				</a>
-				<a class="right carousel-control" href="#carousel-services" role="button" data-slide="next">
-					<span class="btn-right"><i class="fa fa-chevron-right"></i></span>
-				</a>
 			</div>
-
 			<br><br><br>
 
 		{{/ if }}

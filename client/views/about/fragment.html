@@ -7,31 +7,37 @@
 			</span>
 			<br><br>
 
-			{{# markdown }}{{{ aboutActiveText.content }}}{{/ markdown }}
+			<div class="row">
+				<div class="text-left col-sm-10 col-sm-offset-1">
+					{{{ aboutActiveText.content }}}
+				</div>
+			</div>
 			
 			<br><br>
-
-			<div id="carousel-about" class="carousel slide" data-ride="carousel">
-				<ol class="carousel-indicators">
-					{{# each aboutActiveImages }}
-						<li data-target="#carousel-about" data-slide-to="{{ index }}" class="{{# if isCero index }}active{{/ if }}"></li>
-					{{/ each }}
-				</ol>
-				<div class="carousel-inner" role="listbox">
-					{{# each aboutActiveImages }}
-						<div class="item {{# if isCero index }}active{{/ if }}">
-							<img src="{{ link }}">
+			<div class="row">
+				<div class="col-sm-12">
+					<div id="carousel-about" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							{{# each aboutActiveImages }}
+								<li data-target="#carousel-about" data-slide-to="{{ index }}" class="{{# if isCero index }}active{{/ if }}"></li>
+							{{/ each }}
+						</ol>
+						<div class="carousel-inner" role="listbox">
+							{{# each aboutActiveImages }}
+								<div class="item {{# if isCero index }}active{{/ if }}">
+									<img src="{{ link }}">
+								</div>
+							{{/ each }}
 						</div>
-					{{/ each }}
+						<a class="left carousel-control" href="#carousel-about" role="button" data-slide="prev">
+							<span class="btn-left"><i class="fa fa-chevron-left"></i></span>
+						</a>
+						<a class="right carousel-control" href="#carousel-about" role="button" data-slide="next">
+							<span class="btn-right"><i class="fa fa-chevron-right"></i></span>
+						</a>
+					</div>
 				</div>
-				<a class="left carousel-control" href="#carousel-about" role="button" data-slide="prev">
-					<span class="btn-left"><i class="fa fa-chevron-left"></i></span>
-				</a>
-				<a class="right carousel-control" href="#carousel-about" role="button" data-slide="next">
-					<span class="btn-right"><i class="fa fa-chevron-right"></i></span>
-				</a>
 			</div>
-
 			<br><br><br>
 			
 
