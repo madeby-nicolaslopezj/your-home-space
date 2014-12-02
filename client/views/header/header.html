@@ -17,7 +17,7 @@
 								<li><a href="{{ pathFor 'site' }}#gallery">{{ dict 'headerGalleryTitle' }}</a></li>
 								<li><a href="{{ pathFor 'site' }}#pricing">{{ dict 'headerPricingTitle' }}</a></li>
 								<li><a href="{{ pathFor 'site' }}#inspire">{{ dict 'headerInspireTitle' }}</a></li>
-								<li class="active"><a href="{{ pathFor 'posts' }}">{{ dict 'headerBlogTitle' }}</a></li>
+								<li class="active"><a href="{{ pathFor 'site' }}#blog">{{ dict 'headerBlogTitle' }}</a></li>
 								<li><a href="{{ pathFor 'site' }}#contact">{{ dict 'headerContactTitle' }}</a></li>
 							{{ else }}
 								<li class="active"><a href="#home">{{ dict 'headerHomeTitle' }}</a></li>
@@ -26,7 +26,7 @@
 								<li><a href="#gallery">{{ dict 'headerGalleryTitle' }}</a></li>
 								<li><a href="#pricing">{{ dict 'headerPricingTitle' }}</a></li>
 								<li><a href="#inspire">{{ dict 'headerInspireTitle' }}</a></li>
-								<li><a href="{{ pathFor 'posts' }}">{{ dict 'headerBlogTitle' }}</a></li>
+								<li><a href="#blog">{{ dict 'headerBlogTitle' }}</a></li>
 								<li><a href="#contact">{{ dict 'headerContactTitle' }}</a></li>
 							{{/if }}
 						</ul>

@@ -6,27 +6,30 @@
 		<div class="container">
 			<div class="header">
 				<h1 class="section-title">{{ dict 'blogTitle' }}</h1>
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1">
 						<div class="subtitle">
 {{# markdown }}
 {{ dict 'blogSubtitle' }}
 {{/ markdown }}
 						</div>
+					</div>
+				</div>
 			</div>
 
 			<br><br>
 
 			<div class="items">
-				{{#each posts}}
-					{{> postsRow }}
-				{{/each}}
-			</div>
-
-			<br><br>
-
-			<div class="text-center">
-				<p>
-					<a href="{{ pathFor 'posts' }}" class="btn btn-primary">{{ dict 'blogViewAllText' 'View All' }}</a>
-				</p>
+				<div class="row">
+					<div class="col-sm-8">
+						{{#each posts}}
+							{{> postsRow }}
+						{{/each}}
+					</div>
+					<div class="col-sm-4">
+						{{> postsSidebar }}
+					</div>
+				</div>
 			</div>
 
 			<br><br>
@@ -74,7 +77,7 @@
 </template>
 
 <template name="postsItem">
-	<div class="col-sm-4 item">
+	<div class="col-sm-6 item">
 		<h3>{{ title }}</h3>
 		<p class="timeago">{{ livestamp createdAt }}</p>
 		<a href="{{ pathFor 'post' }}">

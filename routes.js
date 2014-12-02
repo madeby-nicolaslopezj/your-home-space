@@ -33,6 +33,7 @@ Router.map(function() {
 		}
 	});
 
+/*
 	this.route('posts', {
 		path: '/posts',
 		loadingTemplate: 'adminLoading',
@@ -62,7 +63,7 @@ Router.map(function() {
 			});
 		}
 	});
-
+*/
 	this.route('postsMonth', {
 		path: '/posts/archive/:year/:month',
 		loadingTemplate: 'adminLoading',

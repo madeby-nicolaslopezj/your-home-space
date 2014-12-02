@@ -1,22 +1,23 @@
 orion.addEntity('services', {
 	image: {
 		type: orion.attributes.image,
-		label: "Image"
+		label: "Image",
+		optional: true,
 	},
 	text: {
-		type: String,
+		type: orion.attributes.summernote,
 		label: "Text",
-		autoform: {
-			type: 'textarea',
-		}
+		optional: true,
 	},
 	detailText: {
 		type: orion.attributes.summernote,
 		label: "Detail Text",
+		optional: true,
 	},
 	detailImages: {
 		type: [orion.attributes.image],
-		label: "Detail Images"
+		label: "Detail Images",
+		optional: true,
 	}
 }, {
 	sidebarName: 'Services',
