@@ -1,0 +1,67 @@
+<template name="postsMonth">
+	<div class="site on-post">
+		{{> header onpost=true }}
+		<div class="hidden-xs">
+			<br><br><br><br><br><br>
+		</div>
+		<div class="posts">
+			<div class="container">
+				<div class="header">
+					<h1 class="section-title">{{ dict 'blogTitle' }}</h1>
+							<div class="subtitle">
+							{{ date }}
+							</div>
+				</div>
+
+				<br><br><br><br>
+				<div class="row">
+					<div class="col-sm-8">
+						{{#each posts}}
+							{{> postsListRow }}
+						{{/each}}
+					</div>
+					<div class="col-sm-4">
+						{{> postsSidebar }}
+					</div>
+				</div>
+			</div>
+		</div>
+		<br><br>
+		{{> subscribe }}
+		{{> footer }}
+	</div>
+	<style type="text/css">
+	.posts a.read-more {
+		color: {{ dict 'blogSubtitleColor' '#EA8825' }};
+	}
+	.posts {
+		background-color: {{ dict 'blogBackgroundColor' }};
+	}
+	.posts .section-title {
+		color: {{ dict 'blogTitleColor' 'black' }};
+	}
+	.posts .subtitle {
+		color: {{ dict 'blogSubtitleColor' '#EA8825' }};
+	}
+	.posts .subtitle:after {
+		display: block;
+		content: "";
+		width: 100px;
+		height: 1px;
+		position: relative;
+		left: 50%;
+		bottom: -10px;
+		margin-left: -50px;
+		background: {{ dict 'blogSubtitleColor' '#EA8825' }};
+	}
+	.posts a.read-more {
+		color: {{ dict 'blogSubtitleColor' '#EA8825' }};
+	}
+	.posts .item .timeago {
+		color: {{ dict 'blogSubtitleColor' '#EA8825' }};
+	}
+	.posts .text {
+		color: {{ dict 'blogTextColor'  }};;
+	}
+	</style>
+</template>

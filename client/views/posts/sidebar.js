@@ -7,7 +7,18 @@ Template.postsSidebar.helpers({
 		var count = 0;
 		var months = [];
 		while (count < 12) {
-			months.push(now.format("MMMM YYYY"));
+			var min = new Date(parseInt(now.format("YYYY")), parseInt(now.format("MM")) -1, 1);
+			var max = new Date(parseInt(now.format("YYYY")), parseInt(now.format("MM")) -1, 31);
+	        var total = orion.entities.posts.collection.find({createdAt: {$gte: min, $lt: max}}, {sort: {createdAt:-1}}).count();
+			var month = {
+				date: now.format("MMMM YYYY"),
+				count: total,
+				year: now.format('YYYY'),
+				month: now.format('MM'),
+			}
+			if (total > 0) {
+				months.push(month);
+			}
 			now.subtract(1, 'months')
 			count++;
 		}
@@ -17,26 +28,6 @@ Template.postsSidebar.helpers({
 });
 
 Template.postsSidebar.rendered = function () {
-	var Pinterest = {
-	    load: function(callback) {
-	        $.getScript('//assets.pinterest.com/js/pinit.js', callback)
-	    },
-
-	    // Get the Pinterest instance
-	    get: function() {
-	      for (var i in window) {
-	         if (i.indexOf('PIN_') == 0 && typeof window[i] == 'object') {
-	            return window[n]
-	         }
-	      }
-	    },
-
-	    // Render Pinterest buttons
-	    render: function(el) {
-	        this.get().f.render.buttonPin(el);
-	    }
-	}
-	Pinterest.load(function(callback) {
-	    Pinterest.render($('.pinterest a')[0]);
-	});
+	$.ajax({ url: 'http://assets.pinterest.com/js/pinit.js', dataType: 'script', cache:true});
+	$.ajax({ url: 'http://assets.pinterest.com/js/pinit_main.js', dataType: 'script', cache:true});
 };
