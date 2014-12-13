@@ -17,11 +17,13 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<div id="carousel-gallery" class="carousel slide" data-ride="carousel">
-						<ol class="carousel-indicators">
-							{{# each galleryImages }}
-								<li data-target="#carousel-gallery" data-slide-to="{{ index }}" class="{{# if isCero index }}active{{/ if }}"></li>
-							{{/ each }}
-						</ol>
+						{{# if needsCarousel }}
+							<ol class="carousel-indicators">
+								{{# each galleryImages }}
+									<li data-target="#carousel-gallery" data-slide-to="{{ index }}" class="{{# if isCero index }}active{{/ if }}"></li>
+								{{/ each }}
+							</ol>
+						{{/ if }}
 						<div class="carousel-inner" role="listbox">
 							{{# each galleryImages }}
 								<div class="item {{# if isCero index }}active{{/ if }}">
@@ -29,12 +31,14 @@
 								</div>
 							{{/ each }}
 						</div>
-						<a class="left carousel-control" href="#carousel-gallery" role="button" data-slide="prev">
-							<span class="btn-left"><i class="fa fa-chevron-left"></i></span>
-						</a>
-						<a class="right carousel-control" href="#carousel-gallery" role="button" data-slide="next">
-							<span class="btn-right"><i class="fa fa-chevron-right"></i></span>
-						</a>
+						{{# if needsCarousel }}
+							<a class="left carousel-control" href="#carousel-gallery" role="button" data-slide="prev">
+								<span class="btn-left"><i class="fa fa-chevron-left"></i></span>
+							</a>
+							<a class="right carousel-control" href="#carousel-gallery" role="button" data-slide="next">
+								<span class="btn-right"><i class="fa fa-chevron-right"></i></span>
+							</a>
+						{{/ if }}
 					</div>
 				</div>
 			</div>

@@ -4,8 +4,8 @@ orion.dictionary.addDefinition('testimonialsTitle', 'testimonials', {
 	optional: true,
 });
 
-orion.dictionary.addDefinition('testimonialsSubtitle', 'testimonials', {
-	type: String,
+orion.dictionary.addDefinition('testimonialsSubtitleD', 'testimonials', {
+	type: orion.attributes.summernote,
 	label: "Sub-Title",
 	optional: true,
 });

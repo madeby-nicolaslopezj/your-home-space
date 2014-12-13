@@ -10,6 +10,9 @@ Template.aboutFragment.helpers({
     },
     isCero: function(index) {
     	return index == 0;
+    },
+    needsCarousel: function() {
+    	return Session.get('aboutActiveImages').length > 1;
     }
 });
 

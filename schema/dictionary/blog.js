@@ -4,13 +4,10 @@ orion.dictionary.addDefinition('blogTitle', 'blog', {
 	optional: true,
 });
 
-orion.dictionary.addDefinition('blogSubtitle', 'blog', {
-	type: String,
+orion.dictionary.addDefinition('blogSubtitleD', 'blog', {
+	type: orion.attributes.summernote,
 	label: "Sub-Title",
 	optional: true,
-	autoform: {
-		type: 'textarea'
-	}
 });
 
 orion.dictionary.addDefinition('blogViewAllText', 'blog', {

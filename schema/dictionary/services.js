@@ -4,13 +4,10 @@ orion.dictionary.addDefinition('servicesTitle', 'services', {
 	optional: true,
 });
 
-orion.dictionary.addDefinition('servicesSubtitle', 'services', {
-	type: String,
+orion.dictionary.addDefinition('servicesSubtitleD', 'services', {
+	type: orion.attributes.summernote,
 	label: "Sub-Title",
 	optional: true,
-	autoform: {
-		type: 'textarea'
-	}
 });
 
 orion.dictionary.addDefinition('servicesBackgroundColor', 'services', {

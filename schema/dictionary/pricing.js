@@ -4,13 +4,10 @@ orion.dictionary.addDefinition('pricingTitle', 'pricing', {
 	optional: true,
 });
 
-orion.dictionary.addDefinition('pricingSubtitle', 'pricing', {
-	type: String,
+orion.dictionary.addDefinition('pricingSubtitleD', 'pricing', {
+	type: orion.attributes.summernote,
 	label: "Sub-Title",
 	optional: true,
-	autoform: {
-		type: 'textarea',
-	}
 });
 
 orion.dictionary.addDefinition('pricingBackgroundColor', 'pricing', {

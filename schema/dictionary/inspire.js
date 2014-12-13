@@ -4,13 +4,10 @@ orion.dictionary.addDefinition('inspireTitle', 'inspire', {
 	optional: true,
 });
 
-orion.dictionary.addDefinition('inspireSubtitle', 'inspire', {
-	type: String,
+orion.dictionary.addDefinition('inspireSubtitleD', 'inspire', {
+	type: orion.attributes.summernote,
 	label: "Sub-Title",
 	optional: true,
-	autoform: {
-		type: 'textarea'
-	}
 });
 
 orion.dictionary.addDefinition('inspireBackgroundColor', 'inspire', {

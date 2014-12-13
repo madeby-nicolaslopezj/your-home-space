@@ -4,13 +4,10 @@ orion.dictionary.addDefinition('aboutTitle', 'about', {
 	optional: true,
 });
 
-orion.dictionary.addDefinition('aboutSubtitle', 'about', {
-	type: String,
+orion.dictionary.addDefinition('aboutSubtitleD', 'about', {
+	type: orion.attributes.summernote,
 	label: "Sub-Title",
 	optional: true,
-	autoform: {
-		type: 'textarea',
-	}
 });
 
 orion.dictionary.addDefinition('aboutText', 'about', {

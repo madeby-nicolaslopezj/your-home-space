@@ -4,13 +4,10 @@ orion.dictionary.addDefinition('galleryTitle', 'gallery', {
 	optional: true,
 });
 
-orion.dictionary.addDefinition('gallerySubtitle', 'gallery', {
-	type: String,
+orion.dictionary.addDefinition('gallerySubtitleD', 'gallery', {
+	type: orion.attributes.summernote,
 	label: "Sub-Title",
 	optional: true,
-	autoform: {
-		type: 'textarea',
-	}
 });
 
 orion.dictionary.addDefinition('galleryBackgroundColor', 'gallery', {

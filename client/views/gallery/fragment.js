@@ -10,6 +10,9 @@ Template.galleryFragment.helpers({
     },
     isCero: function(index) {
     	return index == 0;
+    },
+    needsCarousel: function() {
+    	return Session.get('activeGalleryItem').detailImages.length > 1;
     }
 });
 

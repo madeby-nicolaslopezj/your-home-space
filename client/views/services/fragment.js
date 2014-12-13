@@ -10,6 +10,9 @@ Template.servicesFragment.helpers({
     },
     isCero: function(index) {
     	return index == 0;
+    },
+    needsCarousel: function() {
+    	return Session.get('activeService').detailImages.length > 1;
     }
 });
 

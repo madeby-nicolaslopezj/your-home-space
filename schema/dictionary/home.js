@@ -4,13 +4,10 @@ orion.dictionary.addDefinition('homeTitle', 'home', {
 	optional: true,
 });
 
-orion.dictionary.addDefinition('homeSubtitle', 'home', {
-	type: String,
+orion.dictionary.addDefinition('homeSubtitleD', 'home', {
+	type: orion.attributes.summernote,
 	label: "Sub-Title",
 	optional: true,
-	autoform: {
-		type: 'textarea',
-	}
 });
 
 orion.dictionary.addDefinition('homeBackgroundColor', 'home', {

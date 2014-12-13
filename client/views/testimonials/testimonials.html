@@ -6,7 +6,9 @@
 
 			<div class="header">
 				<h1 class="section-title">{{ dict 'testimonialsTitle' }}</h1>
-				<p class="section-subtitle">{{ dict 'testimonialsSubtitle' }}</p>
+				<div class="subtitle">
+					{{{ dict 'testimonialsSubtitleD.content' }}}
+				</div>
 			</div>
 
 			<br><br>
@@ -41,10 +43,10 @@
 	.testimonials .section-title {
 		color: {{ dict 'testimonialsTitleColor' 'black' }};
 	}
-	.testimonials .section-subtitle {
+	.testimonials .subtitle {
 		color: {{ dict 'testimonialsSubtitleColor' '#EA8825' }};
 	}
-	.testimonials .section-subtitle:after {
+	.testimonials .subtitle:after {
 		background: {{ dict 'testimonialsSubtitleColor' '#EA8825' }};
 	}
 	.testimonials .item {
