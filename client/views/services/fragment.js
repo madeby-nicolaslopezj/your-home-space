@@ -17,7 +17,7 @@ Template.servicesFragment.helpers({
 });
 
 Template.servicesFragment.rendered = function () {
-	$('.carousel').carousel({
+	$('#carousel-services').carousel({
 		interval: 4000
 	})
 };

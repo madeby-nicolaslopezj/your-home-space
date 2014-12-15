@@ -12,6 +12,6 @@ Template.testimonials.helpers({
 
 Template.testimonials.rendered = function () {
 	$('#carousel-testimonials').carousel({
-		interval: 8000
+		interval: 1000
 	})
 };

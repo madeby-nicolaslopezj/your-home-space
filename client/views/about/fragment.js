@@ -17,7 +17,7 @@ Template.aboutFragment.helpers({
 });
 
 Template.aboutFragment.rendered = function () {
-	$('.carousel').carousel({
+	$('#carousel-about').carousel({
 		interval: 4000
 	})
 };

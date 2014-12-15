@@ -9,3 +9,9 @@ Template.home.helpers({
     	return index == 0;
     }
 });
+
+Template.home.rendered = function () {
+	$("#carousel-home").carousel({
+		interval: 7000
+	});
+};

@@ -17,7 +17,7 @@ Template.galleryFragment.helpers({
 });
 
 Template.galleryFragment.rendered = function () {
-	$('.carousel').carousel({
+	$('#carousel-gallery').carousel({
 		interval: 4000
 	})
 };
