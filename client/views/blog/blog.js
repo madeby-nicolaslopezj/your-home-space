@@ -11,3 +11,7 @@ Template.blog.helpers({
         return chunks;
     }
 });
+
+Template.registerHelper('getDate', function(date) {
+    return moment(date).format('MMMM Do YYYY');
+});

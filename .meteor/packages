@@ -18,5 +18,5 @@ iron:router@=1.0.1
 less
 email
 copleykj:livestamp
-mrt:moment
+momentjs:moment
 reywood:iron-router-ga
