@@ -36,7 +36,6 @@ Router.map(function() {
 			});
 		}
 	});
-
 /*
 	this.route('posts', {
 		path: '/posts',
@@ -139,7 +138,7 @@ Router.map(function() {
 				return;
 			}
 			var post = orion.entities.posts.collection.findOne({_id: this.params._id});
-			var dict = dict = orion.dictionary.collection.findOne();
+			var dict = orion.dictionary.collection.findOne();
 			SEO.set({
 				title: post.title,
 				link: {

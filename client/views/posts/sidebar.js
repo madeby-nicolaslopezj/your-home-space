@@ -28,6 +28,5 @@ Template.postsSidebar.helpers({
 });
 
 Template.postsSidebar.rendered = function () {
-	$.ajax({ url: 'http://assets.pinterest.com/js/pinit.js', dataType: 'script', cache:true});
-	$.ajax({ url: 'http://assets.pinterest.com/js/pinit_main.js', dataType: 'script', cache:true});
+	window.parsePinBtns();
 };
