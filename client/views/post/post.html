@@ -29,7 +29,14 @@
 	<div class="post">
 		<div class="">
 			<h1>{{ post.title }}</h1>
-			<p class="sub">{{ getDate post.createdAt }}</p>
+			<p class="sub">
+				<span class="pull-right" style="color: #666">
+					<a href="{{ pathFor 'site' }}#blog">
+						Back to blog
+					</a>
+				</span>
+				{{ getDate post.createdAt }}
+			</p>
 			<br>
 			<img src="{{ post.imageInside.link }}">
 		</div>
