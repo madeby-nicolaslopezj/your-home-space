@@ -68,7 +68,7 @@ Router.map(function() {
 	});
 */
 	this.route('postsMonth', {
-		path: '/posts/archive/:year/:month',
+		path: '/news/archive/:year/:month',
 		loadingTemplate: 'adminLoading',
 		waitOn: function() {
 			return [orion.subs.subscribe('dictionary'),
@@ -104,7 +104,7 @@ Router.map(function() {
 	});
 
 	this.route('post', {
-		path: '/posts/:_id',
+		path: '/news/:_id',
 		loadingTemplate: 'adminLoading',
 		waitOn: function() {
 			return [orion.subs.subscribe('dictionary'),

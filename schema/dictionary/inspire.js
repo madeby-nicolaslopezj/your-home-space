@@ -37,8 +37,14 @@ orion.dictionary.addDefinition('inspireSubtitleColor', 'inspire', {
 	}
 });
 
+orion.dictionary.addDefinition('inspireLink', 'inspire', {
+	type: String,
+	label: "Url",
+	optional: true,
+});
+
 orion.dictionary.addDefinition('inspireImage', 'inspire', {
 	type: orion.attributes.image,
-	label: "Image",
+	label: "Boton",
 	optional: true,
 });
