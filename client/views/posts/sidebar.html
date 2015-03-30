@@ -5,7 +5,7 @@
 			<hr>
 			<div class="recent">
 				{{# each recent }}
-				<p><a href="{{ pathFor 'post' }}">{{ title }}</a></p>
+				<p><a href="{{ pathFor 'blog.show' }}">{{ title }}</a></p>
 				{{/ each }}
 			</div>
 
@@ -14,7 +14,7 @@
 			<hr>
 			<div class="recent">
 				{{# each months }}
-				<p><a href="{{ pathFor 'postsMonth' }}">{{ date }} ({{ count }})</a></p>
+				<p><a href="{{ pathFor 'blog.month' }}">{{ date }} ({{ count }})</a></p>
 				{{/ each }}
 			</div>
 

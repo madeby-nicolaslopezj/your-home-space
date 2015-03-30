@@ -1,6 +1,5 @@
-<template name="post">
-	<div class="site on-post">
-		{{> header onpost=true }}
+<template name="blogShow">
+	<div class="site">
 		<div class="hidden-xs">
 			<br><br><br><br><br><br>
 		</div>
@@ -15,8 +14,6 @@
 			</div>
 		</div>
 		<br><br>
-		{{> subscribe }}
-		{{> footer }}
 	</div>
 	<style type="text/css">
 	.post .sub {
@@ -31,7 +28,7 @@
 			<h1>{{ post.title }}</h1>
 			<p class="sub">
 				<span class="pull-right" style="color: #666">
-					<a href="{{ pathFor 'site' }}#blog">
+					<a href="{{ pathFor 'blog.index' }}">
 						Back to blog
 					</a>
 				</span>

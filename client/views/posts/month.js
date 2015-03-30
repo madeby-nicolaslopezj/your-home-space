@@ -1,4 +1,4 @@
-Template.postsMonth.helpers({
+Template.blogMonth.helpers({
     date: function() {
         var month = parseInt(this.month) - 1;
         return moment([this.year, month]).format("MMMM YYYY");

@@ -1,4 +1,4 @@
-Template.postItem.helpers({
+Template.blogShow.helpers({
 	url: function() {
 		return  Router.url('post', Router.current().params);
 	},
@@ -9,7 +9,7 @@ Template.postItem.helpers({
 	}
 });
 
-Template.postItem.rendered = function () {
+Template.blogShow.rendered = function () {
 	$('html, body').animate({
         scrollTop: 0
     }, 0);

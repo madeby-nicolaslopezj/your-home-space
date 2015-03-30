@@ -1,4 +1,4 @@
-Template.blog.helpers({
+Template.blogIndex.helpers({
     posts: function () {
         all = orion.entities.posts.collection.find({}, {sort: {createdAt:-1}, limit:6}).fetch();
         chunks = [];

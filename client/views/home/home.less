@@ -1,26 +1,25 @@
 @import "/client/stylesheets/variables.import.less";
 
+@media (min-width: @screen-md-min) {
+	.section-title {
+		margin-top: 100px !important;
+	}
+}
+
+@media (max-width: @screen-sm-max) {
+	.section-title {
+		margin-top: 120px !important;
+	}
+}
+
+@media (max-width: @screen-xs-max) {
+	.section-title {
+		margin-top: 10px !important;
+	}
+}
 
 .home {
 	text-align: center;
-
-	@media (min-width: @screen-md-min) {
-		.section-title {
-			margin-top: 100px !important;
-		}
-	}
-
-	@media (max-width: @screen-sm-max) {
-		.section-title {
-			margin-top: 120px !important;
-		}
-	}
-
-	@media (max-width: @screen-xs-max) {
-		.section-title {
-			margin-top: 10px !important;
-		}
-	}
 
 	.home-image {
 		border: white 10px solid;

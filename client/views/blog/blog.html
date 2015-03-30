@@ -1,4 +1,4 @@
-<template name="blog">
+<template name="blogIndex">
 
 	<div class="blog">
 		<span id="blog" class="symbol-target"></span>
@@ -34,7 +34,7 @@
 		</div>
 	</div>
 <style type="text/css">
-	.blog {
+	.blog, body {
 		background-color: {{ dict 'blogBackgroundColor' }};
 	}
 	.blog .section-title {
@@ -80,10 +80,10 @@
 			<div class="col-sm-11">
 				<h3>{{ title }}</h3>
 				<p class="timeago">{{ getDate createdAt }}</p>
-				<a href="{{ pathFor 'post' }}">
+				<a href="{{ pathFor 'blog.show' }}">
 					<img src="{{ image.link }}">
 				</a>
-				<div class="preview">{{ preview }}... <a class="read-more" href="{{ pathFor 'post' }}">read more</a></div>
+				<div class="preview">{{ preview }}... <a class="read-more" href="{{ pathFor 'blog.show' }}">read more</a></div>
 			</div>
 		</div>
 	</div>

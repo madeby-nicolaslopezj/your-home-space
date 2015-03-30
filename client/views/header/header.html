@@ -10,25 +10,33 @@
 					</div>
 					<div class="navbar-list">
 						<ul class="nav nav-tabs" role="tablist">
-							{{# if onpost }}
-								<li><a href="{{ pathFor 'site' }}#home">{{ dict 'headerHomeTitle' }}</a></li>
-								<li><a href="{{ pathFor 'site' }}#services">{{ dict 'headerServicesTitle' }}</a></li>
-								<li><a href="{{ pathFor 'site' }}#about-us">{{ dict 'headerAboutUsTitle' }}</a></li>
-								<li><a href="{{ pathFor 'site' }}#gallery">{{ dict 'headerGalleryTitle' }}</a></li>
-								<li><a href="{{ pathFor 'site' }}#pricing">{{ dict 'headerPricingTitle' }}</a></li>
-								<li><a href="{{ pathFor 'site' }}#inspire">{{ dict 'headerInspireTitle' }}</a></li>
-								<li class="active"><a href="{{ pathFor 'site' }}#blog">{{ dict 'headerBlogTitle' }}</a></li>
-								<li><a href="{{ pathFor 'site' }}#contact">{{ dict 'headerContactTitle' }}</a></li>
-							{{ else }}
-								<li class="active"><a href="#home">{{ dict 'headerHomeTitle' }}</a></li>
-								<li><a href="#services">{{ dict 'headerServicesTitle' }}</a></li>
-								<li><a href="#about-us">{{ dict 'headerAboutUsTitle' }}</a></li>
-								<li><a href="#gallery">{{ dict 'headerGalleryTitle' }}</a></li>
-								<li><a href="#pricing">{{ dict 'headerPricingTitle' }}</a></li>
-								<li><a href="#inspire">{{ dict 'headerInspireTitle' }}</a></li>
-								<li><a href="#blog">{{ dict 'headerBlogTitle' }}</a></li>
-								<li><a href="#contact">{{ dict 'headerContactTitle' }}</a></li>
-							{{/if }}
+							<li class="{{ isActiveRoute regex='home' }}">
+								<a href="{{ pathFor 'home' }}">{{ dict 'headerHomeTitle' }}</a>
+							</li>
+							<li class="{{ isActiveRoute regex='services' }}">
+								<a href="{{ pathFor 'services' }}">{{ dict 'headerServicesTitle' }}</a>
+							</li>
+							<li class="{{ isActiveRoute regex='about' }}">
+								<a href="{{ pathFor 'about' }}">{{ dict 'headerAboutUsTitle' }}</a>
+							</li>
+							<li class="{{ isActiveRoute regex='gallery' }}">
+								<a href="{{ pathFor 'gallery' }}">{{ dict 'headerGalleryTitle' }}</a>
+							</li>
+							<li class="{{ isActiveRoute regex='testimonials' }}">
+								<a href="{{ pathFor 'testimonials' }}">{{ dict 'headerTestimonialsTitle' }}</a>
+							</li>
+							<li class="{{ isActiveRoute regex='pricing' }}">
+								<a href="{{ pathFor 'pricing' }}">{{ dict 'headerPricingTitle' }}</a>
+							</li>
+							<li class="{{ isActiveRoute regex='inspireme' }}">
+								<a href="{{ pathFor 'inspireme' }}">{{ dict 'headerInspireTitle' }}</a>
+							</li>
+							<li class="{{ isActiveRoute regex='blog' }}">
+								<a href="{{ pathFor 'blog.index' }}">{{ dict 'headerBlogTitle' }}</a>
+							</li>
+							<li class="{{ isActiveRoute regex='contact' }}">
+								<a href="{{ pathFor 'contact' }}">{{ dict 'headerContactTitle' }}</a>
+							</li>
 						</ul>
 					</div>
 				</div>

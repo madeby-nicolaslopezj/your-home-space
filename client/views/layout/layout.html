@@ -1,16 +1,11 @@
-<template name="site">
+<template name="mainLayout">
 
 <div class="site">
 	{{> header }}
-	{{> home }}
-	{{> services }}
-	{{> about }}
-	{{> gallery }}
-	{{> testimonials }}
-	{{> pricing }}
-	{{> inspire }}
-	{{> blog }}
-	{{> contact }}
+	<div class="invisible-xs">
+		<br>
+	</div>
+	{{> yield }}
 	{{> subscribe }}
 	{{> footer }}
 </div>

@@ -55,6 +55,12 @@ orion.dictionary.addDefinition('headerGalleryTitle', 'header', {
 	optional: true,
 });
 
+orion.dictionary.addDefinition('headerTestimonialsTitle', 'header', {
+	type: String,
+	label: "Testimonials Text",
+	optional: true,
+});
+
 orion.dictionary.addDefinition('headerPricingTitle', 'header', {
 	type: String,
 	label: "Pricing Text",
