@@ -6,11 +6,7 @@ SiteController = RouteController.extend({
 	layoutTemplate: 'mainLayout',
 	loadingTemplate: 'adminLoading',
 	waitOn: function() {
-    	return [orion.subs.subscribe('dictionary'), 
-			orion.subs.subscribe('entity', 'gallery'), 
-			orion.subs.subscribe('entity', 'services'), 
-			orion.subs.subscribe('entity', 'testimonials'),
-			orion.subs.subscribe('entity', 'posts')];
+    	return orion.subs.subscribe('dictionary');
     },
 	onAfterAction: function() {
 		var dict;
@@ -42,7 +38,10 @@ Router.route('/', {
 
 Router.route('/services', {
 	name: 'services',
-	controller: 'SiteController'
+	controller: 'SiteController',
+	waitOn: function() {
+    	return orion.subs.subscribe('entity', 'services');
+    }
 });
 
 Router.route('/about-us', {
@@ -52,12 +51,18 @@ Router.route('/about-us', {
 
 Router.route('/gallery', {
 	name: 'gallery',
-	controller: 'SiteController'
+	controller: 'SiteController',
+	waitOn: function() {
+    	return orion.subs.subscribe('entity', 'gallery');
+    }
 });
 
 Router.route('/testimonials', {
 	name: 'testimonials',
-	controller: 'SiteController'
+	controller: 'SiteController',
+	waitOn: function() {
+    	return orion.subs.subscribe('entity', 'testimonials');
+    }
 });
 
 Router.route('/pricing', {
@@ -73,12 +78,18 @@ Router.route('/inspire-me', {
 
 Router.route('/blog', {
 	name: 'blog.index',
-	controller: 'SiteController'
+	controller: 'SiteController',
+	waitOn: function() {
+    	return orion.subs.subscribe('entity', 'posts');
+    }
 });
 
 Router.route('/blog/:_id', {
 	name: 'blog.show',
 	controller: 'SiteController',
+	waitOn: function() {
+    	return orion.subs.subscribe('entity', 'posts');
+    },
 	data: function() {
 		return {
 			post: orion.entities.posts.collection.findOne({_id: this.params._id})
@@ -134,6 +145,9 @@ Router.route('/blog/archive/:year/:month', {
 			month: this.params.month
 		}
 	},
+	waitOn: function() {
+    	return orion.subs.subscribe('entity', 'posts');
+    }
 });
 
 Router.route('/contact', {
