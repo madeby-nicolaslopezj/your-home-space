@@ -4,15 +4,12 @@
 
 			<div class="row">
 				<div class="col-sm-12">
-					<a href="{{ pathFor 'site' }}"><img class="logo" src="{{ dict 'siteLogo.link' }}"></a>
+					<a href="{{ pathFor 'home' }}"><img class="logo" src="{{ dict 'siteLogo.link' }}"></a>
 					<div class="help">
 						<p>{{ dict 'headerHelpText' }}</p>
 					</div>
 					<div class="navbar-list">
 						<ul class="nav nav-tabs" role="tablist">
-							<li class="{{ isActiveRoute regex='home' }}">
-								<a href="{{ pathFor 'home' }}">{{ dict 'headerHomeTitle' }}</a>
-							</li>
 							<li class="{{ isActiveRoute regex='services' }}">
 								<a href="{{ pathFor 'services' }}">{{ dict 'headerServicesTitle' }}</a>
 							</li>

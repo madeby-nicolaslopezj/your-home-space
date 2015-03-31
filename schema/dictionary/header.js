@@ -31,12 +31,6 @@ orion.dictionary.addDefinition('headerAlternativeColor', 'header', {
 	}
 });
 
-orion.dictionary.addDefinition('headerHomeTitle', 'header', {
-	type: String,
-	label: "Home Text",
-	optional: true,
-});
-
 orion.dictionary.addDefinition('headerServicesTitle', 'header', {
 	type: String,
 	label: "Services Text",
