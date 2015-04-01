@@ -1,8 +1,5 @@
-orion.dictionary.addDefinition('inspiremeContent', 'inspire', {
+orion.dictionary.addDefinition('inspireUrl', 'inspire', {
 	type: String,
-	label: "HTML Content (Solo que que va dentro de <body></body>)",
-	optional: true,
-	autoform: {
-		type: 'textarea',
-	}
+	label: "Direccion del sitio",
+	optional: true
 });
