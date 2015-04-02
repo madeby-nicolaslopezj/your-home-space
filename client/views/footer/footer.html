@@ -9,15 +9,15 @@
 						</div>
 						<div class="col-sm-6 site-map">
 							<div>
-								<a href="#home">{{ dict 'headerHomeTitle' }}</a>
-								<a href="#services">{{ dict 'headerServicesTitle' }}</a>
-								<a href="#about-us">{{ dict 'headerAboutUsTitle' }}</a>
-								<a href="{{ pathFor 'posts' }}">{{ dict 'headerBlogTitle' }}</a>
+								<a href="{{ pathFor 'home' }}">{{ dict 'headerHomeTitle' }}</a>
+								<a href="{{ pathFor 'services' }}">{{ dict 'headerServicesTitle' }}</a>
+								<a href="{{ pathFor 'about' }}">{{ dict 'headerAboutUsTitle' }}</a>
+								<a href="{{ pathFor 'blog.index' }}">{{ dict 'headerBlogTitle' }}</a>
 							</div>
 							<div>
-								<a href="#gallery">{{ dict 'headerGalleryTitle' }}</a>
-								<a href="#pricing">{{ dict 'headerPricingTitle' }}</a>
-								<a href="#contact">{{ dict 'headerInspireTitle' }}</a>
+								<a href="{{ pathFor 'gallery' }}">{{ dict 'headerGalleryTitle' }}</a>
+								<a href="{{ pathFor 'pricing' }}">{{ dict 'headerPricingTitle' }}</a>
+								<a href="{{ pathFor 'contact' }}">{{ dict 'headerInspireTitle' }}</a>
 							</div>
 						</div>
 					</div>
