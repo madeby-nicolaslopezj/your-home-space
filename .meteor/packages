@@ -16,7 +16,7 @@ iron:dynamic-template@=1.0.3
 iron:layout@=1.0.3
 iron:location@=1.0.3
 iron:router@=1.0.1
-lepozepo:s3@=4.1.1
+lepozepo:s3@=4.1.3
 nicolaslopezj:contactform
 yogiben:bootstrap
 spiderable
@@ -28,3 +28,4 @@ email
 copleykj:livestamp
 momentjs:moment
 reywood:iron-router-ga
+gadicohen:sitemaps
