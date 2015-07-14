@@ -1,0 +1,78 @@
+<template name="inspiremeCategory">
+	<div class="inspire-me inspire-me-category">
+		<div class="container">
+			<span id="inspire-me" class="symbol-target"></span>
+			<div class="hidden-xs">
+				<br><br><br><br><br>
+			</div>
+
+      <div class="nav-buttons">
+        <a href="{{ pathForInspireCategory 1 }}" class="{{# if isLinkActive 1 }} active inspire-highlight {{ else }} inspire-highlight-text {{/ if }} inspire-highlight-border">{{ dict 'inspireCategory1Text' }}</a>
+        <a href="{{ pathForInspireCategory 2 }}" class="{{# if isLinkActive 2 }} active inspire-highlight {{ else }} inspire-highlight-text {{/ if }} inspire-highlight-border">{{ dict 'inspireCategory2Text' }}</a>
+        <a href="{{ pathForInspireCategory 3 }}" class="{{# if isLinkActive 3 }} active inspire-highlight {{ else }} inspire-highlight-text {{/ if }} inspire-highlight-border">{{ dict 'inspireCategory3Text' }}</a>
+      </div>
+
+      <br>
+      <p>
+        {{# if isLinkActive 1 }}
+          {{ dict 'inspireCategory1Description' }}
+        {{/ if }}
+        {{# if isLinkActive 2 }}
+          {{ dict 'inspireCategory2Description' }}
+        {{/ if }}
+        {{# if isLinkActive 3 }}
+          {{ dict 'inspireCategory3Description' }}
+        {{/ if }}
+      </p>
+
+      <p class="inspire-highlight-text">
+        PLEASE CLICK ON THE IMAGES TO SHOP
+      </p>
+
+			<div class="products">
+				{{# each rows }}
+					<div class="row">
+						{{# each this }}
+							<div class="{{ getRow }} product">
+								<a href="{{ url }}">
+									<div class="images">
+										{{# if doubleSpace }}
+											<img class="img-rollover" src="{{ dict 'inspireRolloverImageLarge.link' }}" alt="{{ title }}" />
+										{{ else }}
+											<img class="img-rollover" src="{{ dict 'inspireRolloverImageSmall.link' }}" alt="{{ title }}" />
+										{{/ if }}
+										<img class="product-img" src="{{ image.link }}" alt="{{ title }}">
+									</div>
+									<p class="title">
+										{{ title }}
+									</p>
+									<p class="text-right price inspire-highlight-text">
+										<b>{{ price }}</b>
+									</p>
+								</a>
+							</div>
+						{{/ each }}
+					</div>
+				{{/ each }}
+			</div>
+
+
+			<p class="show-now-btn">
+				<a href="{{ dict 'inspireShopNowLink' }}">Shop Now</a>
+			</p>
+
+			<br>
+		</div>
+	</div>
+	<style media="screen">
+		.inspire-highlight {
+			background-color: {{ dict 'inspireHighlightColor' }};
+		}
+		.inspire-highlight-text, .inspire-highlight-text:hover, .inspire-highlight-text:focus {
+			color: {{ dict 'inspireHighlightColor' }};
+		}
+		.inspire-highlight-border {
+			border-color: {{ dict 'inspireHighlightColor' }};
+		}
+	</style>
+</template>

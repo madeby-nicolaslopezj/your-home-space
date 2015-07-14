@@ -1,0 +1,76 @@
+<template name="inspireme">
+	<div class="inspire-me">
+		<div class="container">
+			<span id="inspire-me" class="symbol-target"></span>
+			<div class="hidden-xs">
+				<br><br><br><br><br>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-4">
+					<br>
+					{{# each leftText }}
+					<p class="sidetext inspire-highlight">
+						{{this}}
+					</p>
+					{{/ each }}
+				</div>
+				<div class="col-sm-6 col-sm-offset-2">
+					{{{ dict 'inspireRightText.content' }}}
+				</div>
+			</div>
+
+			<br><br>
+
+			<div class="row categories">
+				<div class="col-sm-4">
+					<a href="{{ pathForInspireCategory 1 }}">
+						<p class="inspire-highlight-border">
+							{{ dict 'inspireCategory1Text' }}
+						</p>
+						<img src="{{ dict 'inspireCategory1Image.link' }}" alt="{{ dict 'inspireCategory1Text' }}" />
+					</a>
+				</div>
+				<div class="col-sm-4">
+					<a href="{{ pathForInspireCategory 2 }}">
+						<p class="inspire-highlight-border">
+							{{ dict 'inspireCategory2Text' }}
+						</p>
+						<img src="{{ dict 'inspireCategory2Image.link' }}" alt="{{ dict 'inspireCategory2Text' }}" />
+					</a>
+				</div>
+				<div class="col-sm-4">
+					<a href="{{ pathForInspireCategory 3 }}">
+						<p class="inspire-highlight-border">
+							{{ dict 'inspireCategory3Text' }}
+						</p>
+						<img src="{{ dict 'inspireCategory3Image.link' }}" alt="{{ dict 'inspireCategory3Text' }}" />
+					</a>
+				</div>
+			</div>
+
+			<br><br>
+
+			<div class="bottom-text">
+				{{{ dict 'inspireBottomText.content' }}}
+			</div>
+
+			<p class="show-now-btn">
+				<a href="{{ dict 'inspireShopNowLink' }}">Shop Now</a>
+			</p>
+
+			<br>
+		</div>
+	</div>
+	<style media="screen">
+		.inspire-highlight {
+			background-color: {{ dict 'inspireHighlightColor' }};
+		}
+		.inspire-highlight-text, .inspire-highlight-text:hover, .inspire-highlight-text:focus {
+			color: {{ dict 'inspireHighlightColor' }};
+		}
+		.inspire-highlight-border {
+			border-color: {{ dict 'inspireHighlightColor' }};
+		}
+	</style>
+</template>

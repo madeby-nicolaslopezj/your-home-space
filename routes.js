@@ -72,8 +72,15 @@ Router.route('/pricing', {
 
 Router.route('/inspire-me', {
 	name: 'inspireme',
+	controller: 'SiteController'
+});
+
+Router.route('/inspire-me/:category', {
+	name: 'inspireme.category',
 	controller: 'SiteController',
-	layoutTemplate: null,
+  waitOn: function() {
+    return orion.subs.subscribe('productsByCategory', this.params.category);
+  }
 });
 
 Router.route('/blog', {
