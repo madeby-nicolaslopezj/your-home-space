@@ -1,3 +1,9 @@
+orion.dictionary.addDefinition('inspireVisible', 'inspire', {
+	type: Boolean,
+	label: "Link activo",
+	optional: true
+});
+
 orion.dictionary.addDefinition('inspireHighlightColor', 'inspire', {
 	type: String,
 	label: "Color secundario",

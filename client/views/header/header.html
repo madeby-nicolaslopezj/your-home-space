@@ -25,9 +25,11 @@
 							<li class="{{ isActiveRoute regex='pricing' }}">
 								<a href="{{ pathFor 'pricing' }}">{{ dict 'headerPricingTitle' }}</a>
 							</li>
+							{{# with dict 'inspireVisible' }}
 							<li class="{{ isActiveRoute regex='inspireme' }}">
 								<a href="{{ pathFor 'inspireme' }}">{{ dict 'headerInspireTitle' }}</a>
 							</li>
+							{{/ with }}
 							<li class="{{ isActiveRoute regex='blog' }}">
 								<a href="{{ pathFor 'blog.index' }}">{{ dict 'headerBlogTitle' }}</a>
 							</li>
