@@ -1,10 +1,11 @@
 Router.configure({
-    trackPageView: true
+  trackPageView: true
 });
 
 SiteController = RouteController.extend({
 	layoutTemplate: 'mainLayout',
 	loadingTemplate: 'adminLoading',
+  fastRender: true,
 	waitOn: function() {
     	return orion.subs.subscribe('dictionary');
     },

@@ -10,7 +10,7 @@ orionjs:filesystem@=0.0.6
 orionjs:image-attribute@=0.1.3
 orionjs:s3@=0.0.7
 orionjs:summernote@=0.1.5
-aldeed:autoform@=4.0.2
+aldeed:autoform@4.2.2
 iron:core@=1.0.3
 iron:dynamic-template@=1.0.3
 iron:layout@=1.0.3
@@ -28,3 +28,4 @@ copleykj:livestamp
 momentjs:moment
 reywood:iron-router-ga
 gadicohen:sitemaps
+meteorhacks:fast-render
