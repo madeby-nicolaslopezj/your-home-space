@@ -31,6 +31,12 @@ orion.dictionary.addDefinition('inspireShopNowLink', 'inspire', {
 	optional: true
 });
 
+orion.dictionary.addDefinition('inspireInstructions', 'inspire', {
+	type: String,
+	label: "Instrucciones en la categoría",
+	optional: true
+});
+
 orion.dictionary.addDefinition('inspireCategory1Text', 'inspire', {
 	type: String,
 	label: 'Nombre Categoría 1',
@@ -112,14 +118,20 @@ orion.dictionary.addDefinition('inspireBottomText', 'inspire', {
 	optional: true
 })
 
+orion.dictionary.addDefinition('inspireRolloverImageCategories', 'inspire', {
+	type: orion.attributes.image,
+	label: 'Rollover imagen categorías',
+	optional: true
+})
+
 orion.dictionary.addDefinition('inspireRolloverImageSmall', 'inspire', {
 	type: orion.attributes.image,
-	label: 'Rollover image cuadrada',
+	label: 'Rollover imagen cuadrada',
 	optional: true
 })
 
 orion.dictionary.addDefinition('inspireRolloverImageLarge', 'inspire', {
 	type: orion.attributes.image,
-	label: 'Rollover image rectangular',
+	label: 'Rollover imagen rectangular',
 	optional: true
 })

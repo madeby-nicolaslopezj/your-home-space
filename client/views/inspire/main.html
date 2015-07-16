@@ -7,15 +7,15 @@
 			</div>
 
 			<div class="row">
-				<div class="col-sm-4">
+				<div class="col-sm-6">
 					<br>
 					{{# each leftText }}
-					<p class="sidetext inspire-highlight">
-						{{this}}
-					</p>
+					<div class="sidetext">
+						<span class="inspire-highlight">{{this}}</span>
+					</div>
 					{{/ each }}
 				</div>
-				<div class="col-sm-6 col-sm-offset-2">
+				<div class="col-sm-6">
 					{{{ dict 'inspireRightText.content' }}}
 				</div>
 			</div>
@@ -28,7 +28,10 @@
 						<p class="inspire-highlight-border">
 							{{ dict 'inspireCategory1Text' }}
 						</p>
-						<img src="{{ dict 'inspireCategory1Image.link' }}" alt="{{ dict 'inspireCategory1Text' }}" />
+						<div class="categories-rollover">
+							<img class="img-rollover" src="{{ dict 'inspireRolloverImageCategories.link' }}" alt="{{ dict 'inspireCategory1Text' }}" />
+							<img class="category-img" src="{{ dict 'inspireCategory1Image.link' }}" alt="{{ dict 'inspireCategory1Text' }}">
+						</div>
 					</a>
 				</div>
 				<div class="col-sm-4">
@@ -36,7 +39,10 @@
 						<p class="inspire-highlight-border">
 							{{ dict 'inspireCategory2Text' }}
 						</p>
-						<img src="{{ dict 'inspireCategory2Image.link' }}" alt="{{ dict 'inspireCategory2Text' }}" />
+						<div class="categories-rollover">
+							<img class="img-rollover" src="{{ dict 'inspireRolloverImageCategories.link' }}" alt="{{ dict 'inspireCategory2Text' }}" />
+							<img class="category-img" src="{{ dict 'inspireCategory2Image.link' }}" alt="{{ dict 'inspireCategory2Text' }}">
+						</div>
 					</a>
 				</div>
 				<div class="col-sm-4">
@@ -44,7 +50,10 @@
 						<p class="inspire-highlight-border">
 							{{ dict 'inspireCategory3Text' }}
 						</p>
-						<img src="{{ dict 'inspireCategory3Image.link' }}" alt="{{ dict 'inspireCategory3Text' }}" />
+						<div class="categories-rollover">
+							<img class="img-rollover" src="{{ dict 'inspireRolloverImageCategories.link' }}" alt="{{ dict 'inspireCategory3Text' }}" />
+							<img class="category-img" src="{{ dict 'inspireCategory3Image.link' }}" alt="{{ dict 'inspireCategory3Text' }}">
+						</div>
 					</a>
 				</div>
 			</div>
@@ -59,7 +68,7 @@
 				<a href="{{ dict 'inspireShopNowLink' }}">Shop Now</a>
 			</p>
 
-			<br>
+			<br><br><br><br>
 		</div>
 	</div>
 	<style media="screen">

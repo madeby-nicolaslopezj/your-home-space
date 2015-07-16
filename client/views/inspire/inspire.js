@@ -24,7 +24,7 @@ Template.registerHelper('pathForInspireCategory', function(index) {
 
 Template.inspireme.helpers({
   leftText: function() {
-    return orion.dictionary.get('inspireLeftText', '').split(' ');
+    return orion.dictionary.get('inspireLeftText', '').split('  ');
   }
 })
 
