@@ -1,23 +1,19 @@
 orion.addEntity('products', {
 	title: {
-		type: String,
-		label: "Título"
+		type: String
 	},
 	price: {
-		type: String,
-		label: "Precio",
+		type: String
 	},
 	image: {
-		type: orion.attributes.image,
-		label: "Imagen"
+		type: orion.attributes.image
 	},
 	doubleSpace: {
 		type: Boolean,
-		label: "Usa doble espacio",
 		optional: true,
 	},
 	position: {
-    type: Number,
+    type: Number
   },
   category: {
     type: Number,
@@ -31,13 +27,13 @@ orion.addEntity('products', {
 		label: 'URL'
 	}
 }, {
-	sidebarName: 'Productos',
-	pluralName: 'Productos',
-	singularName: 'Producto',
+	sidebarName: 'Products',
+	pluralName: 'Products',
+	singularName: 'Product',
 	defaultIndexTableFields: [
-		{ key: 'title', label: 'Título' },
+		{ key: 'title', label: 'Title' },
 		orion.adminIndexAttributeViews.image('image', 'Image'),
-    { key: 'position', label: 'Posición' },
-    { key: 'category', label: 'Categoría' }
+    { key: 'position', label: 'Position' },
+    { key: 'category', label: 'Category' }
 	]
 });
